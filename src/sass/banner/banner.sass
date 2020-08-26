@@ -1,0 +1,274 @@
+.Cr-banner 
+	position: relative
+	margin-left: auto
+	width: 100%
+
+	@media screen and (max-width: 997px) 
+		// padding-top: 70px
+		padding-top: 0
+	
+
+	&__slide 
+		position: relative
+		height: 100vh
+
+		.swiper-slide 
+			height: 100%
+			position: relative
+			overflow: hidden
+
+			.swiper-inner 
+				width: 100%
+				height: 100%
+				display: block
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+				
+			
+
+			.content 
+				position: absolute
+				bottom: 20%
+				left: 50%
+				transform: translateX(-50%)
+				width: fit-content
+				text-align: center
+
+				h1 
+					font-size: 48px
+					font-family: "Sarabun"
+					color: rgb(255, 255, 255)
+					font-weight: bold
+					text-align: center
+					line-height: 48px
+					margin-bottom: 10px
+
+				h2 
+					text-align: center
+					font-size: 36px
+					line-height: 48px
+					font-family: 'Sarabun'
+					font-weight: 400
+					color: #fff
+				@media screen and ( max-width: 1024px)
+					h1 
+						font-size: 33.6px
+						line-height: unset
+						margin-bottom: 0
+					h2 
+						font-size: 25.2px
+						line-height: unset
+				@media screen and ( max-width: 575px)
+					h1
+						font-size: 23.52px
+					h2 
+						font-size: 17.64px
+				@media screen and ( max-width: 375px)
+					h1
+						font-size: 20px
+					h2 
+						font-size: 12.5px
+			// .icon 
+			// 	width: 130px
+			// 	height: 130px
+			// 	position: absolute
+			// 	top: 50%
+			// 	left: 50%
+			// 	transform: translate(-50%, -50%)
+			// 	z-index: 2
+
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+				
+			
+		
+
+		.crolldown 
+			position: absolute
+			left: 50%
+			bottom: 15%
+			width: 24px
+			height: 24px
+			z-index: 9
+			transform: translateX(-50%)
+			span.ri-arrow-down-line
+				font-size: 24px
+				color: #ffffff
+				position: absolute
+				left: 50%
+				bottom: 0
+				-webkit-animation: sdb07 2s infinite
+				animation: sdb07 2s infinite
+				opacity: 0
+				box-sizing: border-box
+
+				&:nth-of-type(1) 
+					-webkit-animation-delay: 0s
+					animation-delay: 0s
+				
+
+				&:nth-of-type(2) 
+					bottom: -50%
+					-webkit-animation-delay: .15s
+					animation-delay: .15s
+				
+
+				&:nth-of-type(3) 
+					bottom: -100%
+					-webkit-animation-delay: .3s
+					animation-delay: .3s
+			@media screen and ( max-width: 1024px)
+				bottom: 10%
+
+			@-webkit-keyframes sdb07 
+				0% 
+					opacity: .5
+				
+
+				50% 
+					opacity: 1
+				
+
+				100% 
+					opacity: 0
+				
+			
+
+			@keyframes sdb07 
+				0% 
+					opacity: 0
+				
+
+				50% 
+					opacity: 1
+				
+
+				100% 
+					opacity: 0
+
+	.swiper-button-prev,
+	.swiper-button-next 
+		position: absolute
+		background-image: none
+		width: 50px
+		height: 50px
+		visibility: hidden
+		opacity: 0
+		transition: all .3s ease-in-out
+		border: none
+		display: flex
+		align-items: center
+		justify-content: center
+	
+
+	.swiper-button-prev 
+		left: 10px
+
+		&::after 
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			content: '\e875'
+			font-family: 'Linearicons-Free'
+			font-size: 30px
+			color: #fff
+			font-weight: 900
+		
+	
+
+	.swiper-button-next 
+		right: 0
+
+		&::after 
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			content: '\e876'
+			font-family: 'Linearicons-Free'
+			font-size: 30px
+			color: #fff
+			font-weight: 900
+
+	&__list
+		position: absolute
+		width: 100%
+		bottom: 0
+		left: 0
+		z-index: 2
+		.col-xl-2
+			padding: 0 8px
+			&:first-child
+				padding-left: 15px
+			&:last-child
+				padding-right: 15px
+		.item
+			position: relative
+			background-image: linear-gradient( 0deg, rgb(29,213,230) 0%, rgb(70,174,247) 100%)
+			box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05)
+			height: 80px
+			overflow: hidden
+			&::before
+				content: ''
+				background-color: rgb(255, 255, 255)
+				opacity: 0.2
+				position: absolute
+				left: -60%
+				top: -115%
+				transform: translateY(-50%)
+				width: 100%
+				height: 200%
+				z-index: 3
+				transform: rotate(45deg)
+			.nav-link
+				padding-left: 30px
+				height: 100%
+				display: flex
+				align-items: center
+				i 
+					font-size: 36px
+					color: rgb(255, 255, 255)
+					text-align: center
+					padding-right: 15px
+				p 
+					font-size: 16px
+					font-family: "Sarabun"
+					color: rgb(255, 255, 255)
+			&:hover
+				background-color: #ed1b24
+				background-image: linear-gradient( -45deg,  rgba($color: #fff, $alpha: .3) 0%, rgba($color: #fff, $alpha: .2) 100%)
+			&:first-child
+				margin-left: 0
+		@media screen and ( max-width: 1199px)
+			position: static
+			padding-top: 30px
+			.col-xl-2
+				padding: 0 15px
+				.item
+					margin-bottom: 30px
+					.nav-link
+						padding-left: 10px
+					&::before
+						top: -160%
+		@media screen and ( max-width: 768px)
+			.col-xl-2
+				.item
+					&::before
+						top: -120%
+						left: -50%
+		@media screen and ( max-width: 600px)
+			.col-xl-2
+				.item
+					&::before
+						top: -140%
+						left: -50%
+	@media screen and (max-width: 1024px) 
+		&__slide 
+			height: 50vh
