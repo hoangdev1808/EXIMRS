@@ -11,12 +11,6 @@ function fullpage() {
 			loopBottom: true,
 			loopTop: true,
 			css3: true,
-			// navigation: {
-			// 	'textColor': '#000',
-			// 	'bulletsColor': '#000',
-			// 	'position': 'right',
-			// 	'tooltips': ['section1', 'section2', 'section3', 'section4']
-			// },
 			normalScrollElements: null,
 			normalScrollElementTouchThreshold: 5,
 			touchSensitivity: 5,
@@ -25,9 +19,18 @@ function fullpage() {
 			animateAnchor: true,
 
 			//events
-			onLeave: function(index, nextIndex, direction) {},
-			afterLoad: function(anchorLink, index) {},
-			afterRender: function() {},
+			onLeave: function(index, nextIndex, direction) {
+				if (direction == 'down') {
+					$('header').addClass('active')
+				}
+			},
+			afterLoad: function(anchorLink, index) {
+				if (index == 1) {
+					$('header').removeClass('active');
+				}
+			},
+			afterRender: function() {
+			},
 		});
 	}
 }
@@ -49,24 +52,18 @@ function moveNavitem() {
 
 //Slide banner
 function EXIMMainBanner() {
-	var swiperhomebanner = new Swiper('.Cr-banner__slide', {
-		loop: true,
-		speed: 1000,
-		grabCursor: true,
-		watchSlidesProgress: true,
-		mousewheelControl: true,
-		keyboardControl: true,
-		effect: 'fade',
-		autoplay: {
-			delay: 3500,
-			disableOnInteraction: false
-		},
-		navigation: {
-			nextEl: ".Cr-banner__slide .swiper-button-next",
-			prevEl: ".Cr-banner__slide .swiper-button-prev"
-		}
-
-	});
+		var swiperhomebanner = new Swiper('.home-banner', {
+			loop: true,
+			speed: 1500,
+			watchSlidesProgress: true,
+			mousewheelControl: true,
+			keyboardControl: true,
+			effect: 'fade',
+			autoplay: {
+				delay: 3500,
+				disableOnInteraction: false
+			},
+		});
 }
 //Check banner
 const checkLayoutBanner = () => {
@@ -81,10 +78,17 @@ const checkLayoutBanner = () => {
 		mainBanner.css('padding-top', heightHeader);
 	}
 };
+
+function checkFooter(){
+	if($('#pagepiling').length == 1){
+		$('footer').css('display', 'none')
+	}
+}
 document.addEventListener('DOMContentLoaded', () => {
 	fullpage();
 	toggleMenuMobile();
 	moveNavitem();
 	EXIMMainBanner();
 	checkLayoutBanner();
+	checkFooter();
 });
