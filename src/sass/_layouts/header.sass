@@ -2,7 +2,6 @@ header
 	position: fixed
 	width: 100%
 	z-index: 999
-	padding: 15px 0
 	background-color: #fff
 	transition: all .3s ease-in-out
 	&.active
@@ -19,16 +18,18 @@ header
 		.logo
 			max-width: 166px
 			width: 100%
-			height: 50px
+			height: 80px
 			margin-right: 63px
+			display: flex
+			align-items: center
 			img
 				width: 100%
 				height: 100%
 			@media screen and ( max-width: 1199px)
 				margin-right: 20px
 			@media screen and ( max-width: 1024px)
-				width: 60px
-				margin-right: auto
+				width: 110px
+				margin: 0 auto
 				height: unset
 		.main-nav
 			display: flex
@@ -41,17 +42,105 @@ header
 					width: 100%
 					.nav
 						width: 100%
+			.top-nav
+				margin-left: auto
+				@media screen and ( max-width:  1280px)
+					margin-left: auto
+				@media screen and ( max-width: 1025px)
+					display: none
+				#desktop
+					display: flex
+					align-items: center
+					margin-left: auto
+					.hotline
+						background-color: rgb(26, 119, 185)
+						width: 127px
+						height: 26px
+						display: flex
+						align-items: center
+						padding: 0 7px
+						.ri-phone-fill
+							margin-left: 0
+							text-align: center
+							line-height: 30px
+							font-size: 16px
+							font-family: "remixicon"
+							color: #fff
+							margin-right: 8px
+						p
+							font-size: 12px
+							font-family: "Montserrat"
+							color: rgb(255, 255, 255)
+							font-weight: 500
+							text-transform: uppercase
+					.social
+						display: flex
+						align-items: center
+						list-style: none
+						padding-left: 0
+						li 
+							width: 26px
+							height: 26px
+							line-height: 26px
+							text-align: center
+							margin-left: 10px
+							.ri-facebook-fill,
+							.ri-youtube-fill
+								color: #ffffff
+								font-size: 18px
+								font-weight: 400
+							&:first-child
+								background-color: #3b5998
+							&:nth-child(2)
+								background-color: #e50914
+					.search
+						background-color: rgb(245, 245, 245)
+						width: 26px
+						height: 26px
+						margin-left: 10px
+						text-align: center
+						.material-icons
+							font-size: 18px
+							color: #666666
+							line-height: 26px
+					.language
+						margin-left: 20px
+						button
+							border: none
+							display: flex
+							align-items: center
+							padding: 0
+							a
+								font-size: 16px
+								font-family: "Montserrat"
+								color: #333333
+								font-weight: 600
+							&::after
+								border: none
+								content: ''
+								font-family: 'Material Icons'
+								font-size: 18px
+								color: rgb(153, 153, 153)
+
+						.dropdown-menu
+							min-width: 10%
+							a
+								font-size: 16px
+								font-family: "Montserrat"
+								color: #333333
+								font-weight: 600
 			.nav-list
 				width: 100%
 				padding-left: 0
 				display: flex
 				align-items: center
+				justify-content: flex-end
 				.nav-item
-					margin-left: 30px
+					margin-left: auto
 					display: flex
 					align-items: center
 					.nav-link
-						padding: 15px 0
+						padding: 0
 						font-size: 16px
 						font-family: "Sarabun"
 						color: rgb(17, 17, 17)
@@ -70,10 +159,62 @@ header
 							color: $main-color
 				@media screen and ( max-width: 1199px)
 					.nav-item
-						margin-left: 15px
 						.nav-link
 							font-size: 14px
-
+			#mobile
+				border-top: solid 1px $main-color
+				padding: 15px 0
+				@media screen and ( min-width: 1025px)
+					display: none
+				#desktop
+					width: 100%
+					display: flex
+					align-items: center
+					justify-content: center
+					.hotline
+						background-color: rgb(26, 119, 185)
+						width: 127px
+						height: 26px
+						display: flex
+						align-items: center
+						padding: 0 7px
+						.ri-phone-fill
+							margin-left: 0
+							text-align: center
+							line-height: 30px
+							font-size: 16px
+							font-family: "remixicon"
+							color: #fff
+							margin-right: 8px
+						p
+							font-size: 12px
+							font-family: "Montserrat"
+							color: rgb(255, 255, 255)
+							font-weight: 500
+							text-transform: uppercase
+					.social
+						display: flex
+						align-items: center
+						list-style: none
+						padding-left: 0
+						li 
+							width: 26px
+							height: 26px
+							line-height: 26px
+							text-align: center
+							margin-left: 10px
+							.ri-facebook-fill,
+							.ri-youtube-fill
+								color: #ffffff
+								font-size: 18px
+								font-weight: 400
+							&:first-child
+								background-color: #3b5998
+							&:nth-child(2)
+								background-color: #e50914
+					.language,
+					.search
+						display: none
 			@media screen and ( max-width:  1024px)
 				position: absolute
 				right: -100%
@@ -102,128 +243,26 @@ header
 				&.active
 					right: 0
 					transition: ease-in-out all .3s
-			.icon
-				margin-left: 80px
-				max-width: 250px
-				@media screen and ( max-width:  1280px)
-					margin-left: 20px
-					max-width: auto
-				@media screen and ( max-width: 1025px)
-					display: none
-			#desktop
-				display: flex
-				align-items: center
-				margin-left: auto
-				.hotline
-					display: flex
-					align-items: center
-					.ri-phone-line
-						margin-left: 0
-						border-width: 1px
-						border-color: rgb(229, 229, 229)
-						border-style: solid
-						width: 30px
-						height: 30px
-						text-align: center
-						line-height: 30px
-						font-size: 24px
-						font-family: "remixicon"
-						color: rgb(1, 168, 227)
-						margin-right: 8px
-
-					ul
-						list-style: none
-						padding-left: 0
-						li
-							p
-								font-size: 12px
-								font-family: "Sarabun"
-								color: rgb(153, 153, 153)
-							&:last-child
-								p
-									font-size: 16px;
-									color: rgb(1, 168, 227);
-									font-weight: bold;
-									@media screen and ( max-width:  1199px)
-										font-size: 14px
-
-				.search
-					border-width: 1px
-					border-color: rgb(229, 229, 229)
-					border-style: solid
-					border-radius: 0
-					width: 30px
-					height: 30px
-					text-align: center
-					line-height: 30px
-					margin: 0 20px
-					.ri-search-2-line
-						font-size: 18px
-						font-family: "remixicon"
-						color: rgb(1, 168, 227)
-					@media screen and ( max-width:  1199px)
-						margin: 0 10px
-				.language
-					button
-						border: none
-						display: flex
-						align-items: center
-						padding: 0
-						a
-							font-size: 12px
-							font-family: "Sarabun"
-							color: rgb(153, 153, 153)
-						&::after
-							border: none
-							content: 'expand_more'
-							font-family: 'Material Icons'
-							font-size: 18px;
-							color: rgb(153, 153, 153);
-
-					.dropdown-menu
-						min-width: 10%
-						a
-							font-size: 12px
-							font-family: "Sarabun"
-							color: rgb(153, 153, 153)
 		.nav-mobile
 			display: none
 			@media screen and ( max-width: 1024px)
 				display: block
-				margin-left: auto
 				#desktop
 					display: flex
+					align-items: center
 					.hotline
-						display: flex
-						align-items: center
-						.ri-phone-line
-							margin-left: 0
-							font-size: 16px
-							font-family: "remixicon"
-							color: rgb(1, 168, 227)
-							margin-right: 8px
-
-						ul
-							list-style: none
-							padding-left: 0
-							display: flex
-							li
-								&:first-child
-									display: none
-								&:last-child
-									p
-										font-size: 14px;
-										color: rgb(1, 168, 227);
-										font-weight: bold;
+						display: none
+					.social
+						display: none
 					.search
-						border-radius: 0
+						background-color: rgb(245, 245, 245)
+						width: 26px
+						height: 26px
 						text-align: center
-						line-height: 30px
-						margin-left: 7px
-						.ri-search-2-line
-							font-size: 16px
-							font-family: "remixicon"
-							color: rgb(1, 168, 227)
+						.material-icons
+							font-size: 18px
+							color: #666666
+							line-height: 26px
 					.language
 						margin-left: auto
 						button
@@ -231,22 +270,24 @@ header
 							display: flex
 							align-items: center
 							a
-								font-size: 12px
-								font-family: "Sarabun"
-								color: rgb(153, 153, 153)
+								font-size: 16px
+								font-family: "Montserrat"
+								color: #333333
+								font-weight: 600
 							&::after
 								border: none
-								content: 'expand_more'
+								content: ''
 								font-family: 'Material Icons'
-								font-size: 18px;
-								color: rgb(153, 153, 153);
+								font-size: 18px
+								color: rgb(153, 153, 153)
 
 						.dropdown-menu
 							min-width: 10%
 							a
-								font-size: 12px
-								font-family: "Sarabun"
-								color: rgb(153, 153, 153)
+								font-size: 16px
+								font-family: "Montserrat"
+								color: #333333
+								font-weight: 600
 		.toggle-menu 
 			cursor: pointer
 			position: relative
