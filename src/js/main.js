@@ -116,6 +116,8 @@ function listSlide(){
 		},
 	});
 }
+
+
 document.addEventListener('DOMContentLoaded', () => {
 	fullpage();
 	toggleMenuMobile();
