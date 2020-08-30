@@ -1,0 +1,13 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Video';
+	- let bodyClass = 'video-page';
+	- let titlePosition = ['Video'];
+block banner,breadcrumb
+
+block main
+	include ./_components/banner/pages-banner.pug
+	include ./_components/_layout/_breadcrumb.pug
+	include ./_components/lab/video.pug
+block scripts

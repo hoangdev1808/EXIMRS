@@ -1,0 +1,54 @@
+section.section-child.news.wow.fadeInDown(data-wow-delay=".3s")
+	.container
+		.block-title
+			h2 tin tức
+		.news-nav
+			ul
+				li.active
+					a(href="") Tin tức hoạt động công ty
+				li
+					a(href="") Tin thị trường bất động sản
+		.row
+			.col-xl-6.col-md-6.item
+				a(href="tin-tuc-chi-tiet.html") 
+					figure
+						.img
+							img(src="./assets/images/news/n-1.png" alt="")
+						figcaption
+						.desc
+							.date
+								p 01.04.2020
+							.title
+								h3 Nếu muốn chuyển mục đích sử dụng đất, làm ngay trong năm 2019 để giảm chi phí
+			.col-xl-6.col-md-6.item
+				a(href="tin-tuc-chi-tiet.html") 
+					figure
+						.img
+							img(src="./assets/images/news/n-2.png" alt="")
+						figcaption
+						.desc
+							.date
+								p 01.04.2020
+							.title
+								h3 Nếu muốn chuyển mục đích sử dụng đất, làm ngay trong năm 2019 để giảm chi phí
+			-for(i=3; i<9; i++)
+				.col-xl-4.col-md-4.item
+					a(href="tin-tuc-chi-tiet.html") 
+						figure
+							.img
+								img(src="./assets/images/news/n-"+i+".png" alt="")
+							figcaption
+							.desc
+								.date
+									p 01.04.2020
+								.title
+									h3 Nếu muốn chuyển mục đích sử dụng đất, làm ngay trong năm 2019 để giảm chi phí
+		.pages
+			.modulepager
+				ul.pagination
+					li.active
+						a(href="#") 1
+					li
+						a(href="#") 2
+					li
+						a(href="#") 3

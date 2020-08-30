@@ -1,0 +1,61 @@
+section.section-child.project
+	.container
+		.block-title
+			h2 Dự án
+		.project-nav
+			ul
+				li
+					a(href="") tất cả dự án
+				li
+					a(href="") 
+						em.ri-building-4-line
+						p Căn hộ
+				li
+					a(href="")
+						em.ri-road-map-line
+						p Đất nền
+				li
+					a(href="")
+						em.ri-home-smile-line
+						p BĐS Nghỉ dưỡng
+				li
+					a(href="")
+						em.ri-building-line
+						p Nhà phố/Biệt thự
+				li
+					a(href="")
+						em.ri-hotel-line
+						p Officetel
+				li
+					a(href="")
+						em.material-icons search
+		.project-list
+			.row
+				-for(i=1; i<10; i++)
+					.col-xl-4.col-sm-6
+						.item
+							a(href="chi-tiet-du-an.html")
+								figure
+									.img
+										img(src="./assets/images/pro/pro-"+i+".png", alt="")
+									figcaption
+										.desc
+											h3 Khu đô thị Long Hưng City
+											ul
+												li
+													span
+														em.ri-community-line
+														p Quy mô: 198 biệt thự,  482 nhà phố
+												li
+													span
+														em.ri-artboard-2-line
+														p Tổng diện tích : 18,22 ha
+				.pages
+					.modulepager
+						ul.pagination
+							li.active
+								a(href="#") 1
+							li
+								a(href="#") 2
+							li
+								a(href="#") 3

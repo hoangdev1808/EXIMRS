@@ -1,0 +1,12 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Dự án';
+	- let bodyClass = 'project-page';
+	- let titlePosition = ['Dự án'];
+block banner,breadcrumb
+block main
+	include ./_components/banner/pages-banner.pug
+	include ./_components/_layout/_breadcrumb.pug
+	include ./_components/project/project.pug
+block scripts

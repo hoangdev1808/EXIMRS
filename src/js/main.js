@@ -1,5 +1,5 @@
 function fullpage() {
-	if ($(window).width() > 1024) {
+	if (($(window).width() > 1024) && ('#pagepiling'.length >= 1)) {
 		$('#pagepiling').pagepiling({
 			menu: null,
 			direction: 'vertical',
@@ -69,14 +69,13 @@ function EXIMMainBanner() {
 //Check banner
 const checkLayoutBanner = () => {
 	const pagesBanner = $("#page-banner");
-	const breadcrumb = $('.global-breadcrumb');
 	const heightHeader = $("header").outerHeight();
-	const mainBanner = $("#home-banner");
+	const mainBanner = $("#main-banner");
 
-	if (mainBanner.length < 1) {
-		pagesBanner.css('padding-top', heightHeader);
-	} else {
-		mainBanner.css('padding-top', heightHeader);
+	if (pagesBanner.length >= 1) {
+		$('main').css('padding-top', heightHeader);
+	}else{
+		$('main').css('padding-top', heightHeader);
 	}
 };
 
@@ -117,15 +116,21 @@ function listSlide(){
 	});
 }
 
+function moveBreadcrum(){
+	if($('.global-breadcrumb').length >= 1){
+		$('main > .global-breadcrumb').appendTo('main #page-banner');
+	}
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-	fullpage();
 	toggleMenuMobile();
 	moveNavitem();
 	EXIMMainBanner();
 	checkLayoutBanner();
 	checkFooter();
 	listSlide();
+	moveBreadcrum();
+	fullpage();
 	$(window).resize(function(){
 		if ($(window).width() <= 1024){
 			moveNavitem();
