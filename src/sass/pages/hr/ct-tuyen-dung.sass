@@ -1,0 +1,429 @@
+.dnn-hr-detail 
+	&__left 
+		.block-title 
+			margin-bottom: 20px
+
+			h1 
+				font-size: 24px
+				font-family: "Montserrat"
+				color: rgb(51, 51, 51)
+				font-weight: bold
+			
+		
+
+		&__timeline 
+			width: 100%
+			padding: 0 0 10px 0
+			display: flex
+			align-items: center
+			border-bottom: solid 1px rgb(241, 241, 241)
+
+			.time 
+				display: flex
+				align-items: center
+				flex: 1
+				text-align: left
+				font-size: 12px
+				font-family: "Montserrat"
+				color: rgb(153, 153, 153)
+
+				.material-icons 
+					padding-right: 10px
+					font-size: 12px
+					font-family: "Material Icons"
+					color: rgb(153, 153, 153)
+				
+			
+
+			.icon-social 
+				flex: 1
+
+				ul 
+					width: 100px
+					display: flex
+					align-items: center
+					list-style: none
+					justify-content: flex-end
+					margin-left: auto
+
+					li 
+						a 
+							.fa 
+								color: #fff
+								font-size: 13px
+							
+
+						
+
+						padding: 0 15px
+
+						&:first-child 
+							margin-right: 10px
+							background-color: #0099ff
+						
+
+						&:last-child 
+							background-color: #3a5b9e
+						
+					
+				
+			
+
+			@media(max-width: 991.98px) 
+				.time 
+					p 
+						font-size: 13px
+					
+				
+			
+		
+
+		&__content 
+			padding-top: 25px
+
+			table 
+				width: 735px
+
+				tbody 
+					tr 
+						display: flex
+
+						td 
+							padding: 15px 0
+							flex: 1
+
+							span 
+								font-size: 16px
+								font-family: "Montserrat"
+								color: rgb(51, 51, 51)
+								font-weight: bold
+							
+
+							.ri-coins-fill,
+							.ri-plane-line,
+							.ri-award-fill,
+							.ri-user-add-fill,
+							.ri-gift-2-line,
+							.ri-briefcase-2-fill,
+							.ri-first-aid-kit-fill,
+							.ri-footprint-fill 
+								padding-right: 7px
+								color: $main-color
+								font-size: 20px
+							
+
+							p 
+								font-size: 14px
+								font-family: "Montserrat"
+								color: rgb(51, 51, 51)
+								padding-left: 37px
+							
+
+							&:nth-child(2) 
+								padding-left: 100px
+							
+						
+					
+				
+			
+
+			&__list 
+				margin-bottom: 50px
+
+				p 
+					font-size: 16px
+					font-family: "Montserrat"
+					color: rgb(51, 51, 51)
+					font-weight: bold
+				
+
+				ul 
+					padding-top: 25px
+					padding-left: 0
+					list-style: none
+
+					li 
+						position: relative
+						padding-bottom: 15px
+						padding-left: 20px
+
+						p 
+							font-size: 16px
+							font-family: "Montserrat"
+							color: rgb(51, 51, 51)
+							line-height: 1.5
+							font-weight: 400
+						
+
+						&::before 
+							content: 'navigate_next'
+							position: absolute
+							top: 0
+							left: 0
+							font-family: 'Material Icons'
+							font-size: 16px
+							color: rgb(51, 51, 51)
+						
+					
+				
+			
+		
+	
+
+	&__right 
+		width: 100%
+
+		&__btn 
+			.btn__apply 
+				background-color: rgb(233, 0, 6)
+				width: 100%
+				height: 40px
+				border-radius: 0
+				color: #fff
+				font-size: 16px
+				font-family: "Montserrat"
+				line-height: 3.125
+				text-transform: uppercase
+				margin-bottom: 20px
+			
+
+			.btn__down 
+				width: 100%
+				height: 40px
+				border-radius: 0
+				color: $main-color
+				font-size: 16px
+				font-family: "Montserrat"
+				line-height: 3.125
+				text-transform: uppercase
+				border: solid 1px $main-color
+			
+			@media screen and ( max-width: 768px)
+				display: flex
+				.btn__apply
+					margin-right: 10px
+				
+				.btn__down
+					margin-right: 10px
+				
+			
+			@media screen and ( max-width: 425px)
+				flex-wrap: wrap
+			
+		
+
+		&__content 
+			padding-top: 60px
+
+			.block-title 
+				margin-bottom: 0
+				width: 100px
+
+				h1 
+					font-size: 18px
+					font-family: "Montserrat"
+					color: rgb(51, 51, 51)
+					font-weight: bold
+					padding-bottom: 10px
+					border-bottom: solid 3px $main-color
+				
+			
+
+			&__list 
+				padding-left: 0
+				list-style: none
+
+				&__item 
+					padding: 15px 0
+					border-bottom: solid 1px #f1f1f1
+
+					.date 
+						display: flex
+						align-items: center
+						font-size: 14px
+						font-family: "Montserrat"
+						color: rgb(153, 153, 153)
+						line-height: 20px
+						padding-bottom: 15px
+
+						.material-icons 
+							font-size: 16px
+							color: rgb(153, 153, 153)
+							padding-right: 10px
+						
+					
+
+					h2 
+						font-size: 14px
+						font-family: "Montserrat"
+						color: rgb(51, 51, 51)
+						font-weight: bold
+					
+
+					&:hover 
+						h2 
+							color: $main-color
+						
+					
+				
+			
+		
+	
+
+
+.apply-frm 
+	max-width: 1230px
+	padding: 30px 105px
+	margin: 0 auto
+
+	div 
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		position: relative
+	
+
+	h4 
+		font-size: 16px
+		font-weight: 600
+		color: $main-color
+		text-transform: uppercase
+		margin-bottom: 20px
+	
+
+	.col-left 
+		.form-group 
+			width: 50%
+			padding: 0 10px
+
+			.label 
+				font-size: 14px
+				font-weight: 400
+				color: #999
+				margin-bottom: 4px
+			
+
+			.fa-exclamation-triangle 
+				top: 50%
+				transform: translateY(-50%)
+				right: 15px
+				color: red
+			
+
+			.form-control 
+				border-radius: 0
+				width: 100%
+				width: 100%
+				border: 1px solid #e5e5e5
+				color: #333
+				font-size: 13px
+				padding: 7px 15px
+			
+		
+	
+
+	.col-right 
+		flex: 0 0 100%
+		max-width: 100%
+		display: flex
+		flex-wrap: wrap
+
+		textarea 
+			height: 200px
+			width: 100%
+			border: 1px solid #e5e5e5
+			color: #333
+			font-size: 13px
+			padding: 7px 15px
+			border-radius: 0
+		
+
+		.form-group 
+			margin-bottom: 10px
+			flex: 0 0 100%
+			max-width: 100%
+			padding: 0 10px
+
+			label 
+				.required 
+					color: red
+				
+			
+		
+	
+
+	.RadUpload 
+		width: auto !important
+
+		.ruFileWrap 
+			position: relative
+			display: block
+			height: 50px
+
+			.ruBrowse,
+			.ruFileInput 
+				width: 120px
+				height: 50px
+				background: #e5e5e5
+				text-transform: uppercase
+				font-size: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 0
+			
+		
+
+		.ruDropZone 
+			display: none
+		
+	
+	.frm-btnwrap 
+		padding: 0 10px
+		.frm-btn 
+			margin-top: 20px
+			text-align: left
+
+			input[type=submit] 
+				height: 40px
+				width: 100%
+				max-width: 180px
+				display: inline-flex
+				justify-content: center
+				align-items: center
+				border-radius: 0
+				background: 0 0
+				border: 2px solid #ed1c24
+				color: #ed1c24
+				text-transform: uppercase
+			
+		
+	
+
+@media screen and ( max-width: 1024px)
+	.fancybox-slide
+		padding: 15px
+	
+	.apply-frm
+		padding: 30px 0
+	
+
+@media screen and ( max-width: 576px)
+	.apply-frm
+		h4
+			font-size: 14px
+		
+		.col-left 
+			.form-group
+				width: 100%
+			
+		
+		.col-right
+			label 
+				font-size: 14px
+				.required 
+					font-size: 10px
+				
+			
+		
+	

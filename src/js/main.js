@@ -1,5 +1,5 @@
 function fullpage() {
-	if (($(window).width() > 1024) && ('#pagepiling'.length >= 1)) {
+	if (($(window).width() >= 1240) && ('#pagepiling'.length >= 1)) {
 		$('#pagepiling').pagepiling({
 			menu: null,
 			direction: 'vertical',
@@ -9,7 +9,7 @@ function fullpage() {
 			scrollingSpeed: 900,
 			easing: 'swing',
 			loopBottom: true,
-			loopTop: true,
+			loopTop: false,
 			css3: true,
 			normalScrollElements: null,
 			normalScrollElementTouchThreshold: 5,
@@ -25,13 +25,15 @@ function fullpage() {
 				}
 			},
 			afterLoad: function(anchorLink, index) {
-				if (index == 1) {
-					$('header').removeClass('active');
-				}
 			},
 			afterRender: function() {
 			},
 		});
+	}
+	if(('#pagepiling'.length >= 1) && ($(window).width() >= 1240)){
+		$('body').css('overflow', 'hidden')
+	}else{
+		$('body').css('overflow', 'auto')
 	}
 }
 const toggleMenuMobile = () => {
@@ -76,6 +78,9 @@ const checkLayoutBanner = () => {
 		$('main').css('padding-top', heightHeader);
 	}else{
 		$('main').css('padding-top', heightHeader);
+	}
+	if(mainBanner.length >=1){
+		$('main').css('padding-top', 0);
 	}
 };
 

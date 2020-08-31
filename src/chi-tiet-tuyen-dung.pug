@@ -1,0 +1,11 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Tuyển dụng';
+	- let bodyClass = 'hr-page';
+	- let titlePosition = ['Tuyển dụng'];
+block banner,breadcrumb
+block main
+	include ./_components/_layout/_breadcrumb.pug
+	include ./_components/tuyen-dung/detail-hr-1.pug
+block scripts

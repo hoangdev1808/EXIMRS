@@ -1,0 +1,59 @@
+section.section-child.dnn-contact.wow.fadeInDown(data-wow-delay=".3s")
+	.container
+		.block-title.text-uppercase.text-center
+			h1 liên hệ
+		.row
+			.col-xl-5.col-md-6
+				.dnn-contact__infor
+					div
+						.dnn-contact__infor__logo
+							img(src="./assets/logo.png" alt="")
+						.dnn-contact__infor__title.text-uppercase
+							h2 Công ty TNHH Đúc Nam Ninh
+						.dnn-contact__infor__address
+							ul
+								li
+									span
+										i.material-icons
+											|location_on
+									p Địa chỉ: Tổ 10, Phường Mỏ Chè, Thành phố Sông Công, Tỉnh Thái Nguyên
+								li
+									span
+										i.material-icons
+											|mail
+									p Email: info@ducnamninh.com
+								li
+									span
+										i.material-icons
+											|call
+									p Điện thoại: 0901 234 567
+			.col-xl-7.col-md-6.d-flex.align-items-center
+				.box-form
+					.form-group
+						input(type='text' placeholder='Họ và tên')
+					.form-group
+						input(type='text' placeholder='Số điện thoại')
+					.form-group
+						input(type='text' placeholder='Địa chỉ')
+					.form-group
+						input(type='text' placeholder='Email')
+					.form-group.form-title
+						input(type='text' placeholder='Tiêu đề')
+					.form-group.qparagraph 
+						textarea(cols="30", rows="5" placeholder='Nội dung')
+					.form-group.frm-captcha
+						.frm-captcha-input
+							input(type='text' placeholder='Nhập mã')
+						.RadCaptcha.RadCaptcha_Default
+							img(alt='' src='./assets/images/contact/captcha.png')
+							a.rcRefreshImage(title='Hình ảnh mới' href="")
+					.form-group.frm-btnwrap
+						.frm-btn
+							input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
+							em.ri-arrow-right-line
+
+section.section-child.bg-light.mb-0
+	.container
+		.map-wrapper
+			iframe(src='https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59398.78008086362!2d105.80145140642973!3d21.491115666289687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zVOG7lSAxMCwgUGjGsOG7nW5nIE3hu48gQ2jDqCwgVGjDoG5oIHBo4buRIFPDtG5nIEPDtG5nLCBU4buJbmggVGjDoWkgTmd1ecOqbg!5e0!3m2!1sen!2s!4v1595384133322!5m2!1sen!2s', width='', height='', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+
