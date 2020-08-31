@@ -64,7 +64,7 @@
 	width: 330px
 	background-position: center
 	background-size: cover
-	background-repeat: non-repeat
+	background-repeat: no-repeat
 	height: 65px
 	text-align: center
 	h1 
@@ -74,8 +74,12 @@
 		font-weight: bold
 		text-transform: uppercase
 		line-height: 65px
-		@media(max-width: 1024px) 
-			font-size: 23px
+	@media(max-width: 1440px) 
+		width: 232px
+		height: 45px
+		h1
+			font-size: 20px
+			line-height: 45px
 .block-title
 	position: relative
 	h2 
@@ -85,6 +89,10 @@
 		font-weight: bold
 		text-align: left
 		padding-left: 23px
+		@media screen and ( max-width: 1366px)
+			font-size: 25px
+		@media screen and ( max-width: 1024px)
+			font-size: 18px
 	&::before
 		position: absolute
 		content: ''
