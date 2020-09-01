@@ -5,3 +5,122 @@
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
+	.block-title
+		margin-bottom: 90px
+		&::before
+			background-color: #fff
+		h2 
+			color: #fff
+	.h-3__slide
+		position: relative
+		.slide-filed
+			.item
+				width: 400px
+				figure
+					.img
+						width: 100%
+						height: 245px
+						img 
+							width: 100%
+							height: 100%
+							object-fit: cover
+					figcaption
+						width: 328px
+						height: 115px
+						background-color: #fff
+						padding: 20px
+						margin: 0 auto
+						margin-top: -51px
+						position: relative
+						.desc
+							h3 
+								font-size: 18px
+								font-family: "Montserrat"
+								color: rgb(51, 51, 51)
+								font-weight: bold
+								white-space: nowrap
+								overflow: hidden
+								text-overflow: ellipsis
+							.btn-detail
+								position: relative
+								width: 170px
+								height: 40px
+								margin-top: 20px
+								background-color: #ffffff
+								color: rgb(26, 119, 186)
+								border: 1px solid rgb(26, 119, 186)
+								
+							&:hover
+								h3 
+									color: rgb(26, 119, 186)
+									transition: all .3s ease-in-out
+								.btn-detail
+									color: #fff
+									border: 1px solid transparent
+									background-color: rgb(26, 119, 186)
+									transition: all .3s ease-in-out
+									.icon
+										&::before
+											content: url('../assets/icons/plus-hover.png')
+											transition: all .3s ease-in-out
+	@media screen and ( max-width: 1440px)
+		.block-title
+			margin-bottom: 45px
+	@media screen and ( max-width: 1366px)
+		.h-3__slide
+			.slide-filed
+				.item
+					width: 100%
+	@media screen and ( max-width: 1280px)
+		.h-3__slide
+			.swiper-button-next
+				right: 0
+			.swiper-button-prev
+				left: 0
+	@media screen and ( max-width: 1199px)
+		.h-3__slide
+			.slide-filed
+				.item
+					figure
+						figcaption
+							width: 100%
+							height: auto
+							padding: 15px
+							margin-top: 0
+							.desc
+								h3 
+									font-size: 16px
+								.btn-detail
+									width: 135px
+									height: 35px
+	@media screen and ( max-width: 991px)
+		.h-3__slide
+			.slide-filed
+				.item
+					figure
+						.img
+							width: 100%
+							height: 150px
+						figcaption
+							width: 100%
+							height: auto
+							padding: 15px
+							margin-top: 0
+	@media screen and ( max-width: 768px)
+		.h-3__slide
+			.slide-filed
+				.item
+					figure
+						.img
+							width: 100%
+							height: 130px
+	@media screen and ( max-width: 375px)
+		.block-title
+			margin-bottom: 20px
+		.h-3__slide
+			.slide-filed
+				.item
+					figure
+						.img
+							width: 100%
+							height: auto

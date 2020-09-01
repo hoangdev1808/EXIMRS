@@ -96,10 +96,10 @@ function listSlide(){
 		spaceBetween: 30,
 		loop: true,
 		speed: 1000,
-		// autoplay: {
-		// 	delay: 2500,
-		// 	disableOnInteraction: false,
-		// },
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
 		navigation: {
 			nextEl: '.h-3__slide .swiper-button-next',
 			prevEl: '.h-3__slide .swiper-button-prev',
@@ -115,7 +115,7 @@ function listSlide(){
 			},
 			375: {
 				slidesPerView: 1,
-				spaceBetween: 0,
+				spaceBetween: 10,
 			}
 		},
 	});
