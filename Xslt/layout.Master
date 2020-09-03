@@ -73,98 +73,98 @@
 					</asp:Panel>
 				</main>
 					<footer>
-					<div class="footer-block">
-						<div class="container">
-							<div class="row">
-								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card pr-40">
-									<div class="card__title">
-										<h2>thông tin liên hệ</h2>
+						<div class="footer-block">
+							<div class="container">
+								<div class="row">
+									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card pr-40">
+										<div class="card__title">
+											<h2>thông tin liên hệ</h2>
+										</div>
+										<div class="card__body">
+											<ul>
+												<li><span><i class="ri-map-pin-5-line"></i></span>
+													<p>Địa chỉ: 201B Nguyễn Chí Thanh, Phường 12, Quận 5, Thành phố Hồ Chí Minh</p>
+												</li>
+												<li><span><i class="ri-phone-line"></i></span>
+													<p>Điện thoại: <strong>(84-028) 38554137 - (84-028) 38554138 </strong></p>
+												</li>
+												<li><span><i class="ri-printer-line"></i></span>
+													<p>Fax: (84-028) 38557267</p>
+												</li>
+												<li><span><i class="ri-mail-line"></i></span>
+													<p>Email: truyenthong@bvchoray.com</p>
+												</li>
+											</ul>
+										</div>
 									</div>
-									<div class="card__body">
-										<ul>
-											<li><span><i class="ri-map-pin-5-line"></i></span>
-												<p>Địa chỉ: 201B Nguyễn Chí Thanh, Phường 12, Quận 5, Thành phố Hồ Chí Minh</p>
-											</li>
-											<li><span><i class="ri-phone-line"></i></span>
-												<p>Điện thoại: <strong>(84-028) 38554137 - (84-028) 38554138 </strong></p>
-											</li>
-											<li><span><i class="ri-printer-line"></i></span>
-												<p>Fax: (84-028) 38557267</p>
-											</li>
-											<li><span><i class="ri-mail-line"></i></span>
-												<p>Email: truyenthong@bvchoray.com</p>
-											</li>
-										</ul>
+									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+										<div class="card__title">
+											<h2>giới thiệu</h2>
+										</div>
+										<div class="card__body">
+											<ul>
+												<li><a href="">Tổng quan</a></li>
+												<li><a href="">Lịch sử hình thành</a></li>
+												<li><a href="">Dịnh hướng phát triển</a></li>
+												<li><a href="">Cơ cấu tổ chức</a></li>
+												<li><a href="">Hệ thống văn bản</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+										<div class="card__title">
+											<h2>các trung tâm</h2>
+										</div>
+										<div class="card__body">
+											<ul>
+												<li><a href="">Trung tâm khu vực về thông tin thuốc và theo dõi phản ứng có hại của thuốc</a></li>
+												<li><a href="">Trung tâm truyền máu khu vực phía Nam</a></li>
+												<li><a href="">Trung tâm Tim mạch Chợ Rẫy</a></li>
+												<li><a href="">Trung tâm Ung bứu Chợ Rẫy</a></li>
+												<li><a href="">Trung tâm Đào tạo – Chỉ đạo tuyến</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
+										<div class="card__title">
+											<h2>hỗ trợ khách hàng</h2>
+										</div>
+										<div class="card__body">
+											<ul>
+												<li><a href="">Bảng giá dịch vụ</a></li>
+												<li><a href="">Đặt lịch hẹn bác sĩ</a></li>
+												<li><a href="">Đặt mua gói khám sức khỏe</a></li>
+												<li><a href="">Những câu hỏi thường gặp</a></li>
+												<li><a href="">Chính sách bảo mật</a></li>
+												<li><a href="">Tiếp nhận ý kiến khách hàng</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
-								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
-									<div class="card__title">
-										<h2>giới thiệu</h2>
-									</div>
-									<div class="card__body">
+							</div>
+						</div>
+						<div class="copyright">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3 col-sm-6 col-6 content"><a href="">© 2020 Chợ Rẫy</a></div>
+									<div class="col-md-3 col-sm-6 col-6 content"><a href="">Thiết kế website bởi Cánh Cam</a></div>
+									<div class="col-md-3 col-sm-6 col-6 content">
 										<ul>
-											<li><a href="">Tổng quan</a></li>
-											<li><a href="">Lịch sử hình thành</a></li>
-											<li><a href="">Dịnh hướng phát triển</a></li>
-											<li><a href="">Cơ cấu tổ chức</a></li>
-											<li><a href="">Hệ thống văn bản</a></li>
+											<li><a href="">Sitemap</a></li>
+											<li><a href="">Quy định sử dụng</a></li>
 										</ul>
 									</div>
-								</div>
-								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
-									<div class="card__title">
-										<h2>các trung tâm</h2>
-									</div>
-									<div class="card__body">
-										<ul>
-											<li><a href="">Trung tâm khu vực về thông tin thuốc và theo dõi phản ứng có hại của thuốc</a></li>
-											<li><a href="">Trung tâm truyền máu khu vực phía Nam</a></li>
-											<li><a href="">Trung tâm Tim mạch Chợ Rẫy</a></li>
-											<li><a href="">Trung tâm Ung bứu Chợ Rẫy</a></li>
-											<li><a href="">Trung tâm Đào tạo – Chỉ đạo tuyến</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
-									<div class="card__title">
-										<h2>hỗ trợ khách hàng</h2>
-									</div>
-									<div class="card__body">
-										<ul>
-											<li><a href="">Bảng giá dịch vụ</a></li>
-											<li><a href="">Đặt lịch hẹn bác sĩ</a></li>
-											<li><a href="">Đặt mua gói khám sức khỏe</a></li>
-											<li><a href="">Những câu hỏi thường gặp</a></li>
-											<li><a href="">Chính sách bảo mật</a></li>
-											<li><a href="">Tiếp nhận ý kiến khách hàng</a></li>
+									<div class="col-md-3 col-sm-6 col-6 content">
+										<ul class="social">
+											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+											<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+											<li><a href=""><i class="fab fa-instagram"></i></a></li>
+											<li><a href=""><i class="fab fa-youtube"></i></a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="copyright">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-3 col-sm-6 col-6 content"><a href="">© 2020 Chợ Rẫy</a></div>
-								<div class="col-md-3 col-sm-6 col-6 content"><a href="">Thiết kế website bởi Cánh Cam</a></div>
-								<div class="col-md-3 col-sm-6 col-6 content">
-									<ul>
-										<li><a href="">Sitemap</a></li>
-										<li><a href="">Quy định sử dụng</a></li>
-									</ul>
-								</div>
-								<div class="col-md-3 col-sm-6 col-6 content">
-									<ul class="social">
-										<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-										<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-										<li><a href=""><i class="fab fa-instagram"></i></a></li>
-										<li><a href=""><i class="fab fa-youtube"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
 				</footer>
 			</div>
 			<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
@@ -239,12 +239,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="dekstop" id="block__tool">
-				<div class="tool-ganeral">
-					<em class="ri-home-gear-fill"></em>
-				</div>
-				<portal:modulewrapper id="mdl154" runat="server" configuremoduleid="154" />
 			</div>
 		</form>
 		<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>

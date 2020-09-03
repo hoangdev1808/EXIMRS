@@ -1,10 +1,10 @@
 section.section.h-8
 	.container
 		.row
-			.col-xl-7.col-md-6
+			.col-xl-7.col-md-6.col-sm-12
 				.footer-left
 					.row
-						.col-xl-6.col-md-6
+						.col-xl-6.col-md-6.col-sm-6.col-12
 							.footer-card
 								.footer-title
 									p liên hệ
@@ -25,11 +25,11 @@ section.section.h-8
 										li
 											em.material-icons public
 											p www.eximrs.com
-						.col-xl-6.col-md-6
+						.col-xl-6.col-md-6.col-sm-6.col-12
 							.footer-card
 								.footer-title
 									p dự án
-								.footer-body
+								.footer-body.footer-nav
 									ul
 										li
 											a(href="") Căn hộ
@@ -37,11 +37,11 @@ section.section.h-8
 											a(href="") Đất nền
 										li
 											a(href="") Nhà phố - Biệt thự
-						.col-xl-6.col-md-6
+						.col-xl-6.col-md-6.col-sm-6.col-12
 							.footer-card
 								.footer-title
 									p giới thiệu
-								.footer-body
+								.footer-body.footer-nav
 									ul
 										li
 											a(href="") Về chung tôi
@@ -53,11 +53,11 @@ section.section.h-8
 											a(href="") Tôn chỉ hoạt động
 										li
 											a(href="") Đối tác
-						.col-xl-6.col-md-6
+						.col-xl-6.col-md-6.col-sm-6.col-12
 							.footer-card
 								.footer-title
 									p liên kế nhanh
-								.footer-body
+								.footer-body.footer-nav
 									ul
 										li
 											a(href="") Giới thiệu
@@ -71,19 +71,42 @@ section.section.h-8
 											a(href="") Tuyển dụng
 										li
 											a(href="") Liên hệ
-			.col-xl-5.col-md-6
+			.col-xl-5.col-md-6.col-sm-12
 				.footer-right
-					.form-group
-						input(type='text' placeholder="Họ và tên*")
-					.form-group
-						input(type='text' placeholder="Số điện thoại*")
-					.form-group
-						input(type='text' placeholder="Email*")
-					.form-group
-						input(type='text' placeholder="Tiêu đề*")
-					.form-group
-						textarea(cols="30", rows="5" placeholder="Nội dung*")
-					.form-group.frm-btnwrap
-						.frm-btn
-							input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
-							em.material-icons arrow_forward
+					.footer-title
+						p đăng ký nhận bản tin
+					.desc
+						p Chúng tôi có thể giúp gì cho bạn?
+					.wrap-form
+						.form-group
+							input(type='text' placeholder="Họ và tên*")
+						.form-group
+							input(type='text' placeholder="Số điện thoại*")
+						.form-group
+							input(type='text' placeholder="Email*")
+						.form-group
+							input(type='text' placeholder="Tiêu đề*")
+						.form-group
+							textarea(cols="30", rows="5" placeholder="Nội dung*")
+						.form-group.frm-btnwrap
+							.frm-btn
+								input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
+								em.material-icons arrow_forward
+		.copyright
+			.row
+				.col-xl-6.col-md-6.col-sm-7
+					.copy
+						p Copyright 2020 EXIMRS. 
+						p Tất cả các quyền được bảo hộ. 
+							a(href="") Thiết kế website bởi Cánh Cam.
+				.col-xl-6.col-md-6.col-sm-5
+					ul.social
+						li
+							a(href="")
+								i.fab.fa-facebook-square
+						li
+							a(href="")
+								i.fab.fa-youtube
+						li
+							a(href="")
+								i.fab.fa-instagram

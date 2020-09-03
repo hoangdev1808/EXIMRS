@@ -155,13 +155,15 @@ header
 						.material-icons
 							font-size: 24px
 							font-family: "Material Icons"
-							color: rgb(1, 168, 227)
+							color: rgb(17, 17, 17)
 					&:hover
 						.nav-link
 							color: $main-color
 					&.active
 						.nav-link
 							color: $main-color
+							.material-icons
+								color: $main-color
 				@media screen and ( max-width: 1199px)
 					.nav-item
 						.nav-link
@@ -280,6 +282,8 @@ header
 							border: none
 							display: flex
 							align-items: center
+							padding: 0
+							padding-left: 7px
 							a
 								font-size: 16px
 								font-family: "Montserrat"

@@ -11,7 +11,7 @@
     <xsl:template match="Zone">
         <xsl:if test="position()=1">
             <li class="nav-item">
-                <xsl:if test="IsAcrive='true'">
+                <xsl:if test="IsActive='true'">
                     <xsl:attribute name="class">
                         <xsl:text>nav-item active</xsl:text>
                     </xsl:attribute>
@@ -29,7 +29,7 @@
         </xsl:if>
         <xsl:if test="position()!=1">
             <li class="nav-item">
-                <xsl:if test="IsAcrive='true'">
+                <xsl:if test="IsActive='true'">
                     <xsl:attribute name="class">
                         <xsl:text>nav-item active</xsl:text>
                     </xsl:attribute>
