@@ -1,5 +1,5 @@
 function fullpage() {
-	if (($(window).width() >= 1240) && ('#pagepiling'.length >= 1)) {
+	if (($(window).width() > 1280) && ('#pagepiling'.length >= 1)) {
 		$('#pagepiling').pagepiling({
 			menu: null,
 			direction: 'vertical',
@@ -30,7 +30,7 @@ function fullpage() {
 			},
 		});
 	}
-	if(('#pagepiling'.length >= 1) && ($(window).width() >= 1240)){
+	if(('#pagepiling'.length >= 1) && ($(window).width() > 1280)){
 		$('body').css('overflow', 'hidden')
 	}else{
 		$('body').css('overflow', 'auto')
