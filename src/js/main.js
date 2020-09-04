@@ -127,6 +127,46 @@ function moveBreadcrum(){
 	}
 }
 
+function Slidepage(){
+	var swiper = new Swiper('.history-slide .swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		speed: 2000,
+		loop: true,
+		pagination: {
+			el: '.history-slide .swiper-pagination',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' +'<h3>' + (index + 2017) +'</h3>' + '</span>';
+			},
+		},
+		breakpoints: {
+			1280: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			600: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			375: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+			}
+		},
+	});
+}
+
+function toolBout(){
+	$('#sidebar-wrapper').find('.tool-ctrl').on('click', function(){
+		$('#sidebar-wrapper').find('#sideBar').slideToggle()
+	})
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	toggleMenuMobile();
 	moveNavitem();
@@ -135,7 +175,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	checkFooter();
 	listSlide();
 	moveBreadcrum();
+	Slidepage();
 	fullpage();
+	toolBout();
 	$(window).resize(function(){
 		if ($(window).width() <= 1024){
 			moveNavitem();
