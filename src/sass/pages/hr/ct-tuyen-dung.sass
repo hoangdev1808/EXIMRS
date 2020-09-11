@@ -2,18 +2,18 @@
 	&__left 
 		.block-title 
 			margin-bottom: 20px
-
+			&::before
+				display: none
 			h1 
 				font-size: 24px
 				font-family: "Montserrat"
-				color: rgb(51, 51, 51)
+				color: rgb(26, 119, 185)
 				font-weight: bold
-			
-		
 
 		&__timeline 
 			width: 100%
 			padding: 0 0 10px 0
+			margin-bottom: 20px
 			display: flex
 			align-items: center
 			border-bottom: solid 1px rgb(241, 241, 241)
@@ -25,16 +25,7 @@
 				text-align: left
 				font-size: 12px
 				font-family: "Montserrat"
-				color: rgb(153, 153, 153)
-
-				.material-icons 
-					padding-right: 10px
-					font-size: 12px
-					font-family: "Material Icons"
-					color: rgb(153, 153, 153)
-				
-			
-
+				color: #999999
 			.icon-social 
 				flex: 1
 
@@ -49,190 +40,176 @@
 					li 
 						a 
 							.fa 
-								color: #fff
+								color: #999999
 								font-size: 13px
-							
-
-						
-
 						padding: 0 15px
-
 						&:first-child 
 							margin-right: 10px
-							background-color: #0099ff
-						
-
-						&:last-child 
-							background-color: #3a5b9e
-						
-					
-				
-			
 
 			@media(max-width: 991.98px) 
 				.time 
 					p 
 						font-size: 13px
-					
-				
-			
-		
+
 
 		&__content 
-			padding-top: 25px
-
+			padding: 15px 20px
+			background-color: #ebf8ff
+			margin-bottom: 30px
 			table 
-				width: 735px
+				width: 100%
+				margin-bottom: 0
 
 				tbody 
 					tr 
 						display: flex
-
+						border-bottom: solid 1px #cccccc
+						&:last-child
+							border: none
 						td 
 							padding: 15px 0
 							flex: 1
+							&:nth-child(1) 
+								font-size: 16px
+								font-family: "Montserrat"
+								color: rgb(26, 119, 185)
+								font-weight: bold
+							h2 
+								font-size: 16px
+								font-family: "Montserrat"
+								color: rgb(26, 119, 185)
+								font-weight: bold
 
-							span 
+							p 
 								font-size: 16px
 								font-family: "Montserrat"
 								color: rgb(51, 51, 51)
-								font-weight: bold
-							
-
-							.ri-coins-fill,
-							.ri-plane-line,
-							.ri-award-fill,
-							.ri-user-add-fill,
-							.ri-gift-2-line,
-							.ri-briefcase-2-fill,
-							.ri-first-aid-kit-fill,
-							.ri-footprint-fill 
-								padding-right: 7px
-								color: $main-color
-								font-size: 20px
-							
-
-							p 
-								font-size: 14px
-								font-family: "Montserrat"
-								color: rgb(51, 51, 51)
-								padding-left: 37px
-							
 
 							&:nth-child(2) 
 								padding-left: 100px
-							
-						
-					
-				
-			
+								font-size: 16px
+								font-family: "Montserrat"
+								color: rgb(51, 51, 51)
 
-			&__list 
-				margin-bottom: 50px
 
-				p 
-					font-size: 16px
-					font-family: "Montserrat"
-					color: rgb(51, 51, 51)
-					font-weight: bold
-				
-
-				ul 
-					padding-top: 25px
-					padding-left: 0
-					list-style: none
-
-					li 
-						position: relative
-						padding-bottom: 15px
-						padding-left: 20px
-
-						p 
-							font-size: 16px
-							font-family: "Montserrat"
-							color: rgb(51, 51, 51)
-							line-height: 1.5
-							font-weight: 400
-						
-
-						&::before 
-							content: 'navigate_next'
-							position: absolute
-							top: 0
-							left: 0
-							font-family: 'Material Icons'
-							font-size: 16px
-							color: rgb(51, 51, 51)
-						
-					
-				
-			
-		
-	
-
-	&__right 
-		width: 100%
-
-		&__btn 
-			.btn__apply 
-				background-color: rgb(233, 0, 6)
-				width: 100%
-				height: 40px
-				border-radius: 0
-				color: #fff
-				font-size: 16px
+		&__list 
+			margin-bottom: 50px
+			h2 
+				font-size: 20px
 				font-family: "Montserrat"
-				line-height: 3.125
+				color: rgb(26, 119, 185)
+				font-weight: bold;
 				text-transform: uppercase
-				margin-bottom: 20px
-			
 
-			.btn__down 
-				width: 100%
-				height: 40px
-				border-radius: 0
-				color: $main-color
-				font-size: 16px
-				font-family: "Montserrat"
-				line-height: 3.125
-				text-transform: uppercase
-				border: solid 1px $main-color
-			
-			@media screen and ( max-width: 768px)
-				display: flex
-				.btn__apply
-					margin-right: 10px
-				
-				.btn__down
-					margin-right: 10px
-				
-			
-			@media screen and ( max-width: 425px)
-				flex-wrap: wrap
-			
-		
-
-		&__content 
-			padding-top: 60px
-
-			.block-title 
-				margin-bottom: 0
-				width: 100px
-
-				h1 
-					font-size: 18px
-					font-family: "Montserrat"
-					color: rgb(51, 51, 51)
-					font-weight: bold
-					padding-bottom: 10px
-					border-bottom: solid 3px $main-color
-				
-			
-
-			&__list 
+			ul 
+				padding-top: 25px
 				padding-left: 0
 				list-style: none
 
+				li 
+					position: relative
+					padding-bottom: 15px
+					padding-left: 20px
+
+					p 
+						font-size: 16px
+						font-family: "Montserrat"
+						color: rgb(51, 51, 51)
+
+					&::before 
+						content: 'fiber_manual_record	'
+						position: absolute
+						top: 10px
+						left: 0
+						font-family: 'Material Icons'
+						font-size: 6px
+						color: #999999
+			&:nth-child(3)
+				margin-bottom: 30px
+		.box-form
+			width: 810px
+			h2 
+				font-size: 20px
+				font-family: "Montserrat"
+				color: rgb(26, 119, 185)
+				font-weight: bold;
+				text-transform: uppercase
+				margin-bottom: 10px
+			.form-group
+				input 
+					border-width: 1px
+					border-color: rgb(225, 225, 225)
+					border-style: solid
+					background-color: rgb(255, 255, 255)
+					width: 388px
+					height: 43px
+					margin-right: 29px
+					&:last-child
+						margin-right: 0
+				textarea
+					border-width: 1px
+					border-color: rgb(225, 225, 225)
+					border-style: solid
+					background-color: rgb(255, 255, 255)
+					width: 100%
+					height: 138px
+			.frm-captcha
+				display: flex
+				float: left
+				.frm-captcha-input
+					input
+						margin-right: 15px
+			.frm-btnwrap
+				float: right
+				.frm-btn
+					display: flex
+					align-items: center
+					background-color: rgb(26, 119, 186)
+					width: 160px
+					height: 40px
+					padding: 0 50px
+					border-radius: 20px
+					input
+						background-color: transparent
+						border: none
+						font-size: 14px
+						font-family: "Montserrat"
+						color: #ffffff
+						font-weight: bold
+						text-transform: uppercase
+						padding: 0
+						
+					.material-icons
+						padding-left: 25px
+						font-size: 18px
+						font-family: "Material Icons"
+						color: #ffffff
+	&__right 
+		width: 100%
+		&__content 
+			padding-top: 30px
+			position: sticky
+			top: 80px
+			.block-title 
+				margin-bottom: 0
+				background-color: #1a77b9
+				height: 50px
+				&::before
+					display: none
+				h2 
+					font-size: 18px
+					font-family: "Montserrat"
+					color: #ffffff
+					font-weight: bold
+					line-height: 50px
+					padding-bottom: 10px
+					text-transform: uppercase
+
+			&__list 
+				padding: 35px
+				padding-top: 0
+				list-style: none
+				background-color: #f3f3f3
 				&__item 
 					padding: 15px 0
 					border-bottom: solid 1px #f1f1f1
@@ -250,15 +227,13 @@
 							font-size: 16px
 							color: rgb(153, 153, 153)
 							padding-right: 10px
-						
-					
+
 
 					h2 
 						font-size: 14px
 						font-family: "Montserrat"
 						color: rgb(51, 51, 51)
 						font-weight: bold
-					
 
 					&:hover 
 						h2 

@@ -13,7 +13,7 @@
 		padding: 15px
 		background-color: rgb(239, 248, 255)
 		box-shadow: 1.721px 2.457px 10px 0px rgba(19, 28, 35, 0.1)
-		ul 
+		.list-nav 
 			display: flex
 			align-items: center
 			padding-left: 0
@@ -40,7 +40,7 @@
 					justify-content: center
 					a 
 						.material-icons
-							padding-right: 0
+							padding: 7px 17px
 							font-size: 36px
 							font-family: "Material Icons"
 							color: rgb(255, 255, 255)
@@ -51,10 +51,10 @@
 					line-height: 48px
 					justify-content: center
 					em
-						padding-right: 14px
+						padding-right: 0.9375rem
 						color: rgb(39, 15, 15)
 					p 
-						font-size: 14px
+						font-size: 0.9375rem
 						font-family: "Montserrat"
 						color: rgb(39, 15, 15)
 
@@ -62,6 +62,51 @@
 					background-color: #1a77ba
 					a 
 						color: #ffffff
+						p,
+						em,
+						i 
+							color: #ffffff
+		.filter-nav
+			margin-top: 20px
+			width: 100%
+			ul 
+				padding-left: 0
+				display: flex
+				align-items: center
+				list-style: none
+				li 
+					margin-right: auto
+					&:last-child
+						margin-right: 0
+					select,
+					input
+						background-color: rgb(255, 255, 255)
+						box-shadow: 1.721px 2.457px 10px 0px rgba(19, 28, 35, 0.1)
+						width: 260px
+						height: 48px
+						border: none
+						padding: 0 15px
+						option
+							border: none
+							background-color: #ffffff
+					&:last-child
+						background-color: rgb(26, 119, 186)
+						width: 120px
+						height: 48px
+						line-height: 48px
+						text-align: center
+						a 
+							display: flex
+							align-items: center
+							justify-content: center
+							color: #ffffff
+							font-size: 15px
+							em 
+								color: #ffffff
+								font-size: 24px
+			&.active
+				display: none
+
 	&-list
 		.item
 			margin-bottom: 30px
@@ -128,16 +173,30 @@
 									visibility: visible
 									opacity: 1
 									transition: all ease-in-out .3s
-
+	@media screen and ( max-width: 1440px)
+		&-nav
+			.list-nav 
+				li 
+					a 
+						p 
+							font-size: 13px
+	@media screen and ( max-width: 1399px)
+		.filter-nav
+			ul
+				li 
+					select
+						width: 225px
 	@media screen and ( max-width: 1366px)
 		&-nav
-			ul 
+			.list-nav 
 				li 
 					margin-left: auto
-					width: auto
+					width: 164px
 					a 
 						em 
 							padding-right: 7px
+						p 
+							font-size: 12px
 		&-list
 			.item
 				figure
@@ -150,6 +209,16 @@
 									span 
 										p 
 											font-size: 15px
+	@media screen and ( max-width: 1199px)
+		&-nav
+			.list-nav 
+				li 
+					width: auto
+			.filter-nav
+				ul
+					li 
+						select
+							width: auto
 	@media screen and ( max-width: 1024px)
 		&-list
 			.item
@@ -186,3 +255,39 @@
 				figure
 					.img
 						height: 221px
+	@media screen and ( min-width: 991.98px)
+		&-nav
+			.show-nav
+				display: none
+	@media screen and ( max-width: 991.88px)
+		&-nav
+			.show-nav
+				h5 
+					color: #1a77ba
+					font-weight: 600
+			.list-nav
+				display: none
+				li 
+					margin-left: 0
+					margin-bottom: 10px
+					a 
+						justify-content: flex-start
+						em,
+						i,
+						p 
+							font-size: 18px
+					&:last-child
+						margin: 0 auto
+						margin-top: 15px
+			.filter-nav
+				ul
+					flex-direction: column
+					li 
+						width: 100%
+						margin-right: 0
+						margin-bottom: 10px
+						select,
+						input
+							width: 100%
+						&:last-child
+							width: 100%

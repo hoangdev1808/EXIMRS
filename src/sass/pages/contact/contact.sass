@@ -1,0 +1,356 @@
+.dnn-contact 
+	width: 100%
+	height: 100%
+	background-image: url('../assets/images/index/contact.png')
+	background-size: cover
+	background-position: right
+	background-repeat: no-repeat
+	.block-title
+		margin-bottom: 30px
+	&__infor 
+		background-color: rgba($color: #d1e4f1, $alpha: .54)
+		padding-left: 75px
+		padding-right: 80px
+		height: 495px
+		display: flex
+		align-items: center
+
+		&__logo 
+			width: 185px
+			height: 54px
+			margin: 0 auto
+
+			img 
+				width: 100%
+				height: 100%
+			
+		
+
+		&__title 
+			margin-top: 30px
+
+			h2 
+				font-size: 16px
+				font-family: "Montserrat"
+				color: rgb(51, 51, 51)
+				font-weight: bold
+
+			
+
+		
+
+		&__address 
+			padding-top: 40px
+
+			ul 
+				padding: 0
+				list-style: none
+
+				li 
+					display: flex
+					margin-bottom: 15px
+
+					span .material-icons 
+						padding-right: 10px
+						font-size: 20px
+						font-family: "Material Icons"
+						color: $main-color
+					
+
+					p 
+						font-size: 15px
+						font-family: "Montserrat"
+						color: rgb(51, 51, 51)
+					
+				
+			
+		
+		@media screen and ( max-width: 1024px)
+			padding: 15px
+		
+	
+
+	.wrap-form>div 
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		span 
+			color: red
+			font-size: 13px
+			font-family: 'Barlow'
+			font-weight: normal
+
+			&::before 
+				content: ''
+			
+		
+	
+
+	.box-form 
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		.form-group 
+			flex: 0 0 100%
+			margin-bottom: 20px
+			&:nth-child(5) 
+				padding-right: 0
+			
+
+			&:nth-child(2n) 
+				padding-right: 0
+			
+
+			@media(max-width: 1024px) 
+				margin-bottom: 15px
+			
+		
+
+		.form-group input 
+			border: solid 1px rgb(245, 245, 245)
+			width: 100%
+			height: 45px
+			padding-left: 15px
+
+			&::placeholder 
+				font-size: 16px
+			
+		
+
+		.form-title 
+			-webkit-box-flex: 0
+			-ms-flex: 0 0 100%
+			flex: 0 0 100%
+		
+
+		.qparagraph 
+			flex: 0 0 100%
+			height: 100px
+			margin-bottom: 15px
+
+			@media(max-width: 1024px) 
+				margin-bottom: 15px
+			
+
+			textarea 
+				border: 1px solid #f5f5f5
+				width: 100%
+				height: 100%
+				color: #333
+				caret-color: #064975
+				font-size: 15px
+				padding-left: 15px
+			
+		
+
+		.frm-captcha 
+			display: flex
+			flex-direction: row-reverse
+			align-items: center
+			justify-content: flex-end
+			margin: 0
+			flex: none
+			padding: 0
+			float: left
+			width: auto
+
+			.RadCaptcha 
+				position: relative
+				width: unset !important
+
+				em 
+					position: absolute
+					bottom: 100%
+					color: red
+				
+			
+			.RadCaptcha>div>div
+				display: flex
+				align-items: center
+				position: relative
+			
+			.RadCaptcha 
+				height: 40px
+				display: flex
+				flex-direction: row
+				align-items: center
+				margin: 0
+				position: relative
+				span
+					position: absolute
+					bottom: -30px
+					left: 0
+				
+				img 
+					height: 40px !important
+				
+
+				.rcRefreshImage 
+					font-size: 0
+					text-decoration: none
+					margin-left: 25px
+
+					&::after 
+						content: 'replay'
+						font-family: 'Material Icons'
+						font-size: 30px
+						color: #999999
+					
+
+					@media screen and (max-width: 1025px) 
+						margin-left: 0
+					
+				
+			
+
+			.frm-captcha-input 
+				.label 
+					display: none
+
+					height: 50px
+					width: 170px
+					display: flex
+					flex-direction: row-reverse
+					align-items: center
+					justify-content: flex-end
+					margin-left: 25px
+
+				input 
+					margin-bottom: 0
+					height: 100%
+				
+
+				@media screen and (max-width: 1025px) 
+					margin-left: 0
+					width: unset
+				
+
+				@media screen and (max-width: 480px) 
+					margin-bottom: 15px
+				
+			
+
+			@media(max-width: 1024px) 
+				width: unset
+
+				&.frm-captcha-input 
+					width: 100%
+					margin-top: 15px
+				
+			
+
+			@media(max-width: 768px) 
+				width: 100%
+			
+		
+
+		.frm-btnwrap 
+			margin-left: auto
+			margin-bottom: 0
+			flex: none
+			padding: 0
+			float: right
+			width: 170px
+
+			label 
+				display: none
+			
+
+			.frm-btn 
+				position: relative
+				transition: all ease-in-out .3s
+				border: none
+				background-color: rgb(26, 119, 186)
+				width: 190px
+				height: 50px
+				border-radius: 50px
+				input 
+					text-align: center
+					border-radius: 0
+					padding-left: 0
+					font-size: 16px
+					font-family: "Montserrat"
+					color: rgb(255, 255, 255)
+					font-weight: bold
+					text-transform: uppercase
+					border: none
+				
+
+				.ri-arrow-right-line
+					position: absolute
+					right: 20px
+					top: 50%
+					transform: translateY(-50%)
+					font-size: 18px
+					font-family: "remixicon"
+					color: rgb(255, 255, 255)
+				
+				@media(max-width: 991.98px) 
+					width: 120px
+					font-size: 14px
+				
+				&:hover
+					border-radius: 0
+					transition: all ease-in-out .3s
+				
+			
+
+			@media(max-width: 1024px) 
+				width: unset
+				margin-top: 15px
+				float: left
+			
+
+			.frm-btn-reset 
+				display: none
+			
+		
+
+		@media screen and (max-width: 1024px) 
+			margin-left: 0
+			margin-top: 30px
+		
+	
+
+
+
+
+@media(max-width: 991.98px) 
+
+	&__content 
+		&__infor 
+			margin-bottom: 25px
+
+			&__address>ul 
+				li 
+					margin-bottom: 7px
+				
+			
+
+			&__title>h4 
+				font-size: 18px
+				margin-bottom: 15px
+			
+		
+
+		&__form 
+			.form-group input 
+				margin-bottom: 0
+			
+		
+	
+
+
+.map-wrapper 
+	width: 100%
+	height: 63.985vh
+	padding-top: 0
+
+	iframe 
+		width: 100%
+		height: 100%
+	
+
+	@media(max-width: 991.98px) 
+		padding: 0
+	

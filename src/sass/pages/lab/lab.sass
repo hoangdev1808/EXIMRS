@@ -1,0 +1,107 @@
+.lab-images
+	width: 100%
+	height: 100%
+	background-image: url('../assets/images/lab/bg.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: right
+	.block-title
+		margin-bottom: 30px
+		h2 
+			text-transform: uppercase
+	.news-nav
+		ul 
+			display: flex
+			list-style: none
+			padding-left: 0
+			margin-bottom: 25px
+			li 
+				position: relative
+				padding-right: 20px
+				&::before
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					right: 0
+					background-color: rgb(43, 33, 33)
+					width: 1px
+					height: 13px
+					content: ''
+				&:last-child
+					padding-left: 20px
+					&::before
+						display: none
+				a 
+					font-size: 18px
+					font-family: "Montserrat"
+					color: rgb(51, 51, 51)
+	figure
+		width: 100%
+		position: relative
+		.big-img
+			width: 100%
+			height: 400px
+			margin-bottom: 30px
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+		.small-img
+			width: 100%
+			height: 185px
+			margin-bottom: 30px
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+		figcaption
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 50px
+			transition: all ease-in-out .3s
+			background-color: rgba($color: #000, $alpha: .5)
+			.desc
+				line-height: 50px
+				text-align: center
+				.fas
+					visibility: hidden
+					display: none
+					transition: all ease-in-out .3s
+					font-size: 36px
+					color: rgb(255, 255, 255)
+					margin-bottom: 20px
+
+				p 
+					font-size: 18px
+					font-family: "Montserrat"
+					color: rgb(255, 255, 255)
+		&:hover
+			figcaption
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 100%
+				transition: all ease-in-out .3s
+				.desc
+					line-height: 100%
+					.fas
+						display: block
+						visibility: visible
+						transition: all ease-in-out .3s
+		@media screen and ( max-width:  375px)
+			.big-img,
+			.small-img
+				height: 230px
+		@media screen and ( max-width:  768px)
+			.big-img,
+			.small-img
+				height: 400px
+		@media screen and ( max-width:  1024px)
+			.big-img,
+			.small-img
+				height: 620px
+
+
+

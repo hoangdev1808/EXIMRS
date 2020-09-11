@@ -6,7 +6,7 @@ header
 	transition: all .3s ease-in-out
 	&.active
 		transition: all .3s ease-in-out
-		background-color: rgba(255, 255, 255, .7)
+		background-color: #888888b3
 
 	nav
 		display: flex
@@ -15,6 +15,7 @@ header
 		width: 100%
 		@media screen and ( max-width: 1024px)
 			padding: 10px 0
+			
 		.logo
 			max-width: 166px
 			width: 100%
@@ -100,7 +101,7 @@ header
 								background-color: #e50914
 					.search
 						background-color: rgb(245, 245, 245)
-						width: 26px
+						min-width: 26px
 						height: 26px
 						margin-left: 10px
 						text-align: center
@@ -229,6 +230,7 @@ header
 					.search
 						display: none
 			@media screen and ( max-width:  1024px)
+				height: 100vh
 				position: absolute
 				right: -100%
 				top: 100%

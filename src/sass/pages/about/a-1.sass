@@ -46,51 +46,6 @@
 				right: -25px
 				background-color: rgb(26, 119, 185)
 				content: ''
-	@media screen and ( max-width: 1199px)
-		#sidebar-wrapper
-			width: 100%
-			padding: 15px
-			margin-bottom: 30px
-			ul 
-				display: flex
-				align-items: center
-				padding: 0
-				li 
-					margin-bottom: 0
-					margin-left: auto
-					&:first-child
-						margin-left: 0
-					a 
-						font-size: 14px
-	@media screen and ( max-width: 768px)
-		#sidebar-wrapper
-			position: fixed
-			z-index: 99
-			top: 50%
-			right: 0
-			width: auto
-			margin-bottom: 0
-			transition: all .3s ease-in-out
-			padding: 5px
-			.tool-ctrl
-				width: 35px
-				height: 35px
-				display: block
-				-webkit-animation: rotation 2s infinite linear
-				.material-icons
-					font-size: 35px
-					color:  rgb(26, 119, 185)
-				@-webkit-keyframes rotation
-					from 
-						-webkit-transform: rotate(0deg)
-					to 
-						-webkit-transform: rotate(359deg)
-			ul
-				display: none
-				flex-direction: column
-				li 
-					margin-left: 0
-					padding: 10px
 		.a-1__content
 			.left
 				.desc

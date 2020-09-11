@@ -1,0 +1,187 @@
+.news
+	width: 100%
+	height: 100%
+	background-image: url('../assets/images/news/bg.png')
+	background-size: cover
+	background-position: left
+	.block-title
+		margin-bottom: 30px
+		h2 
+			text-transform: uppercase
+	.news-nav
+		ul 
+			display: flex
+			list-style: none
+			padding-left: 0
+			margin-bottom: 25px
+			li 
+				position: relative
+				padding-right: 20px
+				&::before
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					right: 0
+					background-color: rgb(43, 33, 33)
+					width: 1px
+					height: 13px
+					content: ''
+				&:last-child
+					padding-left: 20px
+					&::before
+						display: none
+				a 
+					font-size: 18px
+					font-family: "Montserrat"
+					color: rgb(51, 51, 51)
+	.item
+		figure 
+			width: 100%
+			height: 100%
+			.big-img
+				width: 100%
+				height: 340px
+				overflow: hidden
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+					transform: scale(1)
+					transition: all .3s ease-in-out
+			.small-img
+				width: 100%
+				height: 220px
+				overflow: hidden
+				img 
+					width: 100%
+					height: 100%
+					object-fit: cover
+					transform: scale(1)
+					transition: all .3s ease-in-out
+			figcaption
+				width: 90.33%
+				height: 130px
+				background-color: #fff
+				padding: 20px 25px
+				margin: 0 auto
+				margin-top: -60px
+				position: relative
+				overflow: hidden
+				.time
+					p
+						font-size: 12px
+						font-family: "Montserrat"
+						color: rgb(153, 153, 153)
+				.desc
+					overflow: hidden
+					text-overflow: ellipsis
+					display: -webkit-box
+					-webkit-line-clamp: 4
+					-webkit-box-orient: vertical
+					h3
+						font-size: 18px
+						font-family: "Montserrat"
+						columns: #333333
+						font-weight: 600
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(4),
+		&:nth-child(5)
+			margin-bottom: 30px
+		&:nth-child(6),
+		&:nth-child(7),
+		&:nth-child(8)
+			margin-bottom: 15px
+		&:hover
+			figure 
+				.big-img,
+				.small-img
+					img 
+						transform: scale(1.1)
+						transition: all .3s ease-in-out
+				figcaption
+					.desc
+						h3 
+							color: rgb(26, 119, 185)
+	@media screen and ( max-width:  1366px)
+		.block-title
+			margin-bottom: 20px
+		.item
+			figure
+				.big-img
+					height: 300px
+				.small-img
+					width: 100%
+					height: 197px
+				figcaption
+					margin-top: 0
+					width: 100%
+					padding: 10px 15px
+					.desc
+						-webkit-line-clamp: 4
+	@media screen and ( max-width: 1199px)
+		.item
+			figure
+				.big-img
+					height: 255px
+				.small-img
+					height: 160px
+				figcaption
+					height: auto
+					padding: 15px
+					.desc
+						-webkit-line-clamp: 3
+	@media screen and ( max-width: 1024px)
+		.item
+			figure
+				.big-img
+					height: 200px
+				.small-img
+					height: 130px
+	@media screen and ( max-width: 768px)
+		.item
+			figure
+				.big-img
+					height: 190px
+				.small-img
+					height: 195px
+			&:nth-child(3),
+			&:nth-child(4)
+				margin-bottom: 30px
+	@media screen and ( max-width: 575px)
+		.block-title
+			margin-bottom: 10px
+		.news-nav
+			ul 
+				margin-bottom: 10px
+				li 
+					padding-right: 5px
+					&:last-child
+						padding-left: 5px
+						padding-right: 0
+					a 
+						font-size: 12px
+		.item
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8),
+			&:nth-child(9)
+				margin-bottom: 15px
+			figure
+				.big-img
+					height: 300px
+				.small-img
+					height: 300px
+		
+	@media screen and ( max-width: 375px)
+		.item
+			figure
+				.big-img
+					height: 195px
+				.small-img
+					height: 195px
+

@@ -76,6 +76,7 @@
 				color: rgb(255, 255, 255)
 		.wrap-form
 			.form-group
+				position: relative
 				margin-bottom: 20px
 				input
 					width: 100%
@@ -106,6 +107,17 @@
 						font-size: 14px
 						font-family: "Montserrat"
 						color: rgba(255, 255, 255, 0.702)
+				span 
+					position: absolute
+					bottom: -15px
+					color: red
+					font-family: "Montserrat"
+					font-size: 14px
+					left: 20px
+					&::before
+						display: none
+				label
+					display: none
 				.frm-btn
 					display: flex
 					align-items: center
@@ -123,6 +135,8 @@
 						font-weight: bold
 						text-transform: uppercase
 						padding: 0
+					.frm-btn-reset
+						display: none
 					.material-icons
 						padding-left: 25px
 						font-size: 18px

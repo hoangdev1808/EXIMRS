@@ -1,4 +1,4 @@
-section.section-child.dnn-hr-detail.wow.fadeInDown(data-wow-delay=".3s")
+section.section-child.dnn-hr-detail
 	.container
 		.row
 			.col-lg-9.col-md-12.col-12.dnn-hr-detail__left
@@ -53,10 +53,8 @@ section.section-child.dnn-hr-detail.wow.fadeInDown(data-wow-delay=".3s")
 									h2 Kinh nghiệm
 								td
 									p 1 năm
-				.dnn-hr-detail__left__content__list
-					p Mô tả công việc
-					p Yêu cầu hồ sơ còn hạn ít nhất 6 tháng ( bổ sung khi đến nhận việc)
-
+				.dnn-hr-detail__left__list
+					h2 Mô tả công việc
 					ul
 						li
 							p Hỗ trợ khách hàng mua hàng, tăng doanh thu bán hàng thông qua giới thiệu tư vấn sản phẩm, giới thiệu các chương trình ưu đãi. Cung cấp dịch vụ bán hàng chuyên nghiệp đáp ứng tốt nhu cầu của khách hàng.
@@ -78,8 +76,8 @@ section.section-child.dnn-hr-detail.wow.fadeInDown(data-wow-delay=".3s")
 							p Kiểm tra và đảm bảo hành hóa đủ tiêu chuẩn về chất lượng và bao bì, tem nhãn trước khi bán và xuất nhập kho nội bộ. 
 						li
 							p Kiểm kê hàng hóa định kỳ theo định kỳ hàng ngày / tháng / quý đúng theo quy định.
-				.dnn-hr-detail__left__content__list
-					p Yêu cầu
+				.dnn-hr-detail__left__list
+					h2 Yêu cầu
 					ul
 						li
 							p Nam / nữ từ 18-28 tuổi. Ngoại hình dễ nhìn, giọng nói dễ nghe (Hạn chế sinh viên, vướng bận lịch học)
@@ -93,8 +91,8 @@ section.section-child.dnn-hr-detail.wow.fadeInDown(data-wow-delay=".3s")
 							p Nắm bắt nhanh kiến thức về hàng hoá cty
 						li
 							p Ưu tiên biết giao tiếp tiếng Anh.
-				.dnn-hr-detail__left__content__list
-					p Liên hệ ứng tuyển
+				.dnn-hr-detail__left__list
+					h2 Liên hệ ứng tuyển
 					p Yêu cầu hồ sơ còn hạn ít nhất 6 tháng ( bổ sung khi đến nhận việc)
 					ul
 						li
@@ -115,24 +113,21 @@ section.section-child.dnn-hr-detail.wow.fadeInDown(data-wow-delay=".3s")
 						|(BP.NS sẽ ưu tiên phỏng vấn những hồ sơ gửi về trước)
 					p Vui lòng gửi hồ sơ ứng tuyển về cho BP.NS
 				.box-form
-					h2 ứng tuyênt công việc này
+					h2 ứng tuyển công việc này
 					.form-group
 						input(type='text' placeholder='Họ và tên')
-					.form-group
 						input(type='text' placeholder='Số điện thoại')
 					.form-group
-						input(type='text' placeholder='Địa chỉ')
-					.form-group
 						input(type='text' placeholder='Email')
-					.form-group.form-title
 						input(type='text' placeholder='Tiêu đề')
-					.form-group.qparagraph 
+					.form-group
 						textarea(cols="30", rows="5" placeholder='Nội dung')
 					.form-group.frm-captcha
 						.frm-captcha-input
 							input(type='text' placeholder='Nhập mã hiển thị')
 						.RadCaptcha.RadCaptcha_Default
-							a.rcRefreshImage(title='Hình ảnh mới' href="") Hình ảnh mới
+							a.rcRefreshImage(title='Hình ảnh mới' href="")
+								em.material-icons replay
 							img(alt='' src='./assets/images/contact/captcha.png')
 					.form-group.frm-btnwrap
 						.frm-btn
@@ -140,7 +135,7 @@ section.section-child.dnn-hr-detail.wow.fadeInDown(data-wow-delay=".3s")
 			.col-lg-3.col-md-12.col-12.dnn-hr-detail__right
 				.dnn-hr-detail__right__content
 					.block-title
-						h1 tuyển dụng khác
+						h2 tuyển dụng khác
 					ul.dnn-hr-detail__right__content__list
 						-for(i=1; i<6; i++)
 							li.dnn-hr-detail__right__content__list__item

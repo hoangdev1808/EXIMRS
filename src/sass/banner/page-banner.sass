@@ -22,26 +22,29 @@
 			li 
 				height: 100%
 				border-right: solid 1px #fff
-				a 
-					color: #fff
-					font-family: 'Montserrat'
-				span 
-					color: #ffffff
-					font-family: 'Montserrat'
-				&:first-child
-					position: relative
-					span
-						display: none
-						padding-left: 0
+				position: relative
+				padding: 0 10px
+				display: flex
+				align-items: center
+				a
+					font-size: 14px
+					font-family: "Montserrat"
+					color: rgb(255, 255, 255)
+
+					@media(max-width: 991.98px)
+						font-size: 10px
+
+				&:hover
 					a
-						font-size: 0
-					&::after
-						font-family: 'Material Icons'
-						font-size: 14px
-						content: "home"
-						color: #ffffff
-					
-					&:hover
 						color: $main-color
-				&:last-child
-					border: none
+
+				&:first-child
+					a 
+						span
+							position: relative 
+							font-size: 0
+							&::before
+								content: 'home'
+								font-size: 14px
+								color: #ffffff
+								font-family: 'Material Icons'

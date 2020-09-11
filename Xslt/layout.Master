@@ -72,99 +72,67 @@
 						<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
 					</asp:Panel>
 				</main>
-					<footer>
-						<div class="footer-block">
-							<div class="container">
-								<div class="row">
-									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card pr-40">
-										<div class="card__title">
-											<h2>thông tin liên hệ</h2>
-										</div>
-										<div class="card__body">
-											<ul>
-												<li><span><i class="ri-map-pin-5-line"></i></span>
-													<p>Địa chỉ: 201B Nguyễn Chí Thanh, Phường 12, Quận 5, Thành phố Hồ Chí Minh</p>
-												</li>
-												<li><span><i class="ri-phone-line"></i></span>
-													<p>Điện thoại: <strong>(84-028) 38554137 - (84-028) 38554138 </strong></p>
-												</li>
-												<li><span><i class="ri-printer-line"></i></span>
-													<p>Fax: (84-028) 38557267</p>
-												</li>
-												<li><span><i class="ri-mail-line"></i></span>
-													<p>Email: truyenthong@bvchoray.com</p>
-												</li>
-											</ul>
-										</div>
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-3 col-md-6">
+								<div class="footer-card">
+								<portal:modulewrapper id="mdl159" runat="server" configuremoduleid="159" />
+								</div>
+							</div>
+							<div class="col-xl-2 col-md-6 col-sm-6 col-6">
+								<div class="footer-card">
+									<portal:modulewrapper id="mdl160" runat="server" configuremoduleid="160" />
+								</div>
+							</div>
+							<div class="col-xl-2 col-md-6 col-sm-6">
+								<div class="footer-card">
+									<portal:modulewrapper id="mdl161" runat="server" configuremoduleid="161" />
+									
+								</div>
+							</div>
+							<div class="col-xl-2 col-md-6 col-sm-6">
+								<div class="footer-card">
+								<portal:modulewrapper id="mdl162" runat="server" configuremoduleid="162" />
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12">
+								<div class="footer-card">
+									<div class="footer-title">
+										<p>đăng ký nhận bản tin</p>
 									</div>
-									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
-										<div class="card__title">
-											<h2>giới thiệu</h2>
-										</div>
-										<div class="card__body">
-											<ul>
-												<li><a href="">Tổng quan</a></li>
-												<li><a href="">Lịch sử hình thành</a></li>
-												<li><a href="">Dịnh hướng phát triển</a></li>
-												<li><a href="">Cơ cấu tổ chức</a></li>
-												<li><a href="">Hệ thống văn bản</a></li>
-											</ul>
-										</div>
+									<div class="desc">
+										<p>Chúng tôi có thể giúp gì cho bạn?</p>
 									</div>
-									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
-										<div class="card__title">
-											<h2>các trung tâm</h2>
+									<div class="wrap-form">
+										<div class="form-group">
+											<input type="text" placeholder="Họ và tên*">
 										</div>
-										<div class="card__body">
-											<ul>
-												<li><a href="">Trung tâm khu vực về thông tin thuốc và theo dõi phản ứng có hại của thuốc</a></li>
-												<li><a href="">Trung tâm truyền máu khu vực phía Nam</a></li>
-												<li><a href="">Trung tâm Tim mạch Chợ Rẫy</a></li>
-												<li><a href="">Trung tâm Ung bứu Chợ Rẫy</a></li>
-												<li><a href="">Trung tâm Đào tạo – Chỉ đạo tuyến</a></li>
-											</ul>
+										<div class="form-group">
+											<input type="text" placeholder="Số điện thoại*">
 										</div>
-									</div>
-									<div class="col-xl-3 col-md-6 col-sm-6 col-12 footer-card">
-										<div class="card__title">
-											<h2>hỗ trợ khách hàng</h2>
+										<div class="form-group">
+											<input type="text" placeholder="Email*">
 										</div>
-										<div class="card__body">
-											<ul>
-												<li><a href="">Bảng giá dịch vụ</a></li>
-												<li><a href="">Đặt lịch hẹn bác sĩ</a></li>
-												<li><a href="">Đặt mua gói khám sức khỏe</a></li>
-												<li><a href="">Những câu hỏi thường gặp</a></li>
-												<li><a href="">Chính sách bảo mật</a></li>
-												<li><a href="">Tiếp nhận ý kiến khách hàng</a></li>
-											</ul>
+										<div class="form-group">
+											<input type="text" placeholder="Tiêu đề*">
+										</div>
+										<div class="form-group">
+											<textarea cols="30" rows="5" placeholder="Nội dung*"></textarea>
+										</div>
+										<div class="form-group frm-btnwrap">
+											<div class="frm-btn">
+												<input class="btn btn-default frm-btn-submit" type="submit" name="" value="Gửi"><em class="material-icons">arrow_forward</em>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="copyright">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-3 col-sm-6 col-6 content"><a href="">© 2020 Chợ Rẫy</a></div>
-									<div class="col-md-3 col-sm-6 col-6 content"><a href="">Thiết kế website bởi Cánh Cam</a></div>
-									<div class="col-md-3 col-sm-6 col-6 content">
-										<ul>
-											<li><a href="">Sitemap</a></li>
-											<li><a href="">Quy định sử dụng</a></li>
-										</ul>
-									</div>
-									<div class="col-md-3 col-sm-6 col-6 content">
-										<ul class="social">
-											<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-											<li><a href=""><i class="fab fa-instagram"></i></a></li>
-											<li><a href=""><i class="fab fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+							<portal:modulewrapper id="mdl163" runat="server" configuremoduleid="163" />
 						</div>
+					</div>
 				</footer>
 			</div>
 			<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
