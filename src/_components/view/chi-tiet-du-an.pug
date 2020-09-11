@@ -1,11 +1,10 @@
-extends _components/_layout/_layout.pug
+extends ./_layout/_layout.pug
 
 block var
 	- let title = 'Chi tiết dự án';
 	- let bodyClass = 'project-detail-page';
 	- let titlePosition = ['Chi Tiết Dự án'];
-block banner,breadcrumb
 block main
-	include ./_components/_layout/_breadcrumb.pug
-	include ./_components/project/project-detail.pug
+	include ./_layout/_breadcrumb.pug
+	include ../project/project-detail.pug
 block scripts

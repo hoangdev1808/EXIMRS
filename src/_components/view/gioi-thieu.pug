@@ -1,0 +1,16 @@
+extends ./_layout/_layout.pug
+
+block var
+	- let title = 'Giới thiệu';
+	- let bodyClass = 'about-page';
+	- let titlePosition = ['Giới Thiệu'];	
+block main
+	include ../banner/pages-banner.pug
+	include ./_layout/_breadcrumb.pug
+	include ../about/a-1.pug
+	include ../about/a-2.pug
+	include ../about/a-3.pug
+	include ../about/a-4.pug
+	include ../about/a-5.pug
+	include ../about/a-6.pug
+block scripts

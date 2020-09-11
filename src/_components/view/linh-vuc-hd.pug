@@ -1,0 +1,11 @@
+extends ./_layout/_layout.pug
+
+block var
+	- let title = 'lĩnh vực hoạt dộng';
+	- let bodyClass = 'filed-page';
+	- let titlePosition = ['Lĩnh vực hoạt động'];
+block main
+	include ../banner/pages-banner.pug
+	include ./_layout/_breadcrumb.pug
+	include ../filed/filed.pug
+block scripts

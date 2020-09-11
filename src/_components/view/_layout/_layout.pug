@@ -19,12 +19,11 @@ html(lang="en")
 			#wrapper.ov-h
 				block header
 					include _header.pug
-				block banner,breadcrumb
 				main
 					block main
 					#js-page-verify(class=bodyClass hidden)
 				block footer
-					include _footer.pug
+					include  _footer.pug
 			include _tool.pug
 			#searchfancybox(style='display: none;')
 				.container

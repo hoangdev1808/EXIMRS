@@ -6,7 +6,7 @@ import pug from 'gulp-pug';
 import plumber from 'gulp-plumber';
 
 const pugTask = () => {
-	return src('src/**.pug')
+	return src('src/_components/view/*.pug')
 		.pipe(plumber(function(err) {
 			console.log(err);
 			this.emit('end');
