@@ -71,7 +71,7 @@
 					</asp:ContentPlaceHolder>
 					<div id="pagepiling">
 						<section class="section h-1" id="main-banner">
-								<div class="main-banner">
+								<div class="main-banner" data-aos="fade-up">
 									<portal:modulewrapper id="mdl174" runat="server" configuremoduleid="174" />
 								</div>
 						</section>

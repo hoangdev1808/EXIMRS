@@ -23,13 +23,24 @@ function fullpage() {
 				if (direction == 'down') {
 					$('header').addClass('active')
 				}
+				if(direction == 'down' && nextIndex >= 2){
+					AOS.init({
+						disable: "mobile",
+						duration: 1300,
+						offset: 300
+					});
+				}
 			},
 			afterLoad: function(anchorLink, index) {
 				if (index == 1) {
 					$('header').removeClass('active')
 				}
+				
 			},
-			afterRender: function() {},
+
+			afterRender: function() {
+
+			},
 		});
 	}
 	if (('#pagepiling'.length >= 1) && ($(window).width() > 1280)) {
@@ -312,9 +323,9 @@ function scrollSidebar() {
 			if ($('#page-banner').length >= 1) {
 				if ((scroll > (heightHeader + heightbanner) - 80)) {
 					$('#sidebar-wrapper').addClass('fixed').css('top', heightHeader)
-				} else if($(window).width() >1199){
+				} else if ($(window).width() > 1199) {
 					$('#sidebar-wrapper').removeClass('fixed').css('top', 0)
-				}else{
+				} else {
 					$('#sidebar-wrapper').removeClass('fixed').css('top', (heightHeader + heightbanner) - 70)
 				}
 			} else if ((scroll > heightHeader - 80)) {
@@ -363,6 +374,12 @@ function FilterNav() {
 	$('.project-nav .list-nav').find('#button-filter').on('click', function() {
 		$('.project-nav .filter-nav').slideToggle()
 	})
+}
+
+function changePlaceholder() {
+	$('.contact-page .wrap-form .frm-captcha-input input').attr('placeholder', 'Mã hiển thị')
+	$('footer .subscribe-form .frm-captcha .frm-captcha-input input').attr('placeholder', 'Mã hiển thị')
+	$('footer .subscribe-form .frm-btn input.frm-btn-submit').attr('onclick', 'atag("send", "conversion")')
 }
 
 document.addEventListener('DOMContentLoaded', () => {
