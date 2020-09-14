@@ -1,58 +1,4 @@
-<<<<<<< Updated upstream
-function fullpage() {
-	if (($(window).width() > 1280) && ('#pagepiling'.length >= 1)) {
-		$('#pagepiling').pagepiling({
-			menu: null,
-			direction: 'vertical',
-			verticalCentered: true,
-			sectionsColor: [],
-			anchors: [],
-			scrollingSpeed: 900,
-			easing: 'swing',
-			loopBottom: true,
-			loopTop: false,
-			css3: true,
-			normalScrollElements: null,
-			normalScrollElementTouchThreshold: 5,
-			touchSensitivity: 5,
-			keyboardScrolling: true,
-			sectionSelector: '.section',
-			animateAnchor: true,
-
-			//events
-			onLeave: function(index, nextIndex, direction) {
-				if (direction == 'down') {
-					$('header').addClass('active')
-				}
-				if(direction == 'down' && nextIndex >= 2){
-					AOS.init({
-						disable: "mobile",
-						duration: 1300,
-						offset: 300
-					});
-				}
-			},
-			afterLoad: function(anchorLink, index) {
-				if (index == 1) {
-					$('header').removeClass('active')
-				}
-				
-			},
-
-			afterRender: function() {
-
-			},
-		});
-	}
-	if (('#pagepiling'.length >= 1) && ($(window).width() > 1280)) {
-		$('body').css('overflow', 'hidden')
-	} else {
-		$('body').css('overflow', 'auto')
-	}
-}
-=======
 import Loading from './loading'
->>>>>>> Stashed changes
 const toggleMenuMobile = () => {
 	$(".toggle-menu").on("click", function() {
 		$(this).toggleClass("active");
@@ -379,31 +325,6 @@ function FilterNav() {
 		$('.project-nav .filter-nav').slideToggle()
 	})
 }
-<<<<<<< Updated upstream
-
-function changePlaceholder() {
-	$('.contact-page .wrap-form .frm-captcha-input input').attr('placeholder', 'Mã hiển thị')
-	$('footer .subscribe-form .frm-captcha .frm-captcha-input input').attr('placeholder', 'Mã hiển thị')
-	$('footer .subscribe-form .frm-btn input.frm-btn-submit').attr('onclick', 'atag("send", "conversion")')
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-	toggleMenuMobile();
-	moveNavitem();
-	EXIMMainBanner();
-	checkLayoutBanner();
-	checkFooter();
-	listSlide();
-	moveBreadcrum();
-	Slidepage();
-	toolBout();
-	tabsDescription();
-	scrollSidebar();
-	coutingNumber();
-	ListnavCetalogry();
-	FilterNav();
-	fullpage();
-=======
 if ($(document).ready(function () {
 	new Vivus("logo", {
 		// type: "oneByOne",
@@ -439,5 +360,4 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		coutingNumber();
 		ListnavCetalogry();
 		FilterNav();
->>>>>>> Stashed changes
 });

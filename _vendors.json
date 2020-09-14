@@ -10,12 +10,8 @@
 		"bower_components/swiper/dist/js/swiper.min.js",
 		"bower_components/fancybox/dist/jquery.fancybox.js",
 		"bower_components/pagePiling.js/dist/jquery.pagepiling.js",
-<<<<<<< Updated upstream
-		"bower_components/aos/dist/aos.js"
-=======
 		"bower_components/slick-carousel/slick/slick.min.js",
 		"bower_components/vivus/dist/vivus.min.js"
->>>>>>> Stashed changes
 	],
 	"css": [
 		"node_modules/@mdi/font/css/materialdesignicons.mim.css",

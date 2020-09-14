@@ -5,6 +5,6 @@ document.addEventListener('readystatechange', (event) => {
 		loaderEl.classList.add('active');
 		setTimeout(()=>{
 			loaderEl.parentNode.removeChild(loaderEl);
-		}, 300)
+		}, 3000)
 	}
 });
