@@ -4,7 +4,7 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/">
-        <div class="block-title">
+        <div class="block-title animation-left">
             <h2>
                 <xsl:value-of select="/NewsList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of>
             </h2>
@@ -16,7 +16,7 @@
     </xsl:template>
     <xsl:template match="News" mode="BigImg">
         <xsl:if test="position()&gt;0 and position()&lt;3">
-            <div class="col-xl-6 col-md-6 col-sm-6 item">
+            <div class="col-xl-6 col-md-6 col-sm-6 item animation-left">
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="Url"></xsl:value-of>
@@ -54,7 +54,7 @@
     </xsl:template>
     <xsl:template match="News" mode="SmallImg">
         <xsl:if test="position()&gt;2 and position()&lt;6">
-            <div class="col-xl-4 col-md-4 col-sm-6 item">
+            <div class="col-xl-4 col-md-4 col-sm-6 item animation-right">
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="Url"></xsl:value-of>

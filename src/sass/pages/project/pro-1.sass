@@ -167,12 +167,21 @@
 							transform: scale(1.1)
 							transition: all ease-in-out .3s
 					figcaption
+						transition: all ease-in-out .3s
+						background-color: rgba(26,119,186,.52)
 						.desc
 							h3 
+								color: #ffffff
 								&::before
 									visibility: visible
 									opacity: 1
 									transition: all ease-in-out .3s
+							ul 
+								li 
+									span 
+										em,
+										p 
+											color: #fff
 	@media screen and ( max-width: 1440px)
 		&-nav
 			.list-nav 

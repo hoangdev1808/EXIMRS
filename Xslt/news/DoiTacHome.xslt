@@ -4,12 +4,12 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/">
-        <div class="block-title">
+        <div class="block-title animation-left">
             <h2>
                 <xsl:value-of select="/NewsList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of>
             </h2>
         </div>
-        <div class="content">
+        <div class="content animation-right">
             <div class="row no-gutters">
                 <xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
             </div>

@@ -20,6 +20,9 @@ import {
 	jsCore
 } from "./.tasks/core-js";
 import {
+	jsFullPageTask
+} from "./.tasks/fullpage";
+import {
 	cssCore
 } from "./.tasks/core-css";
 import {
@@ -40,6 +43,7 @@ exports.default = series(
 	cssTask,
 	jsTask,
 	jsTask2,
+	jsFullPageTask,
 	pugTask,
 	server,
 )

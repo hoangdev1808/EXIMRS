@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 function fullpage() {
 	if (($(window).width() > 1280) && ('#pagepiling'.length >= 1)) {
 		$('#pagepiling').pagepiling({
@@ -49,6 +50,9 @@ function fullpage() {
 		$('body').css('overflow', 'auto')
 	}
 }
+=======
+import Loading from './loading'
+>>>>>>> Stashed changes
 const toggleMenuMobile = () => {
 	$(".toggle-menu").on("click", function() {
 		$(this).toggleClass("active");
@@ -98,7 +102,7 @@ const checkLayoutBanner = () => {
 };
 
 function checkFooter() {
-	if ($('#pagepiling').length == 1) {
+	if ($('.full-page').length == 1) {
 		$('footer').css('display', 'none')
 	}
 }
@@ -375,6 +379,7 @@ function FilterNav() {
 		$('.project-nav .filter-nav').slideToggle()
 	})
 }
+<<<<<<< Updated upstream
 
 function changePlaceholder() {
 	$('.contact-page .wrap-form .frm-captcha-input input').attr('placeholder', 'Mã hiển thị')
@@ -398,4 +403,41 @@ document.addEventListener('DOMContentLoaded', () => {
 	ListnavCetalogry();
 	FilterNav();
 	fullpage();
+=======
+if ($(document).ready(function () {
+	new Vivus("logo", {
+		// type: "oneByOne",
+		duration: 150,
+		start: "autostart",
+		forceRender: !1,
+		dashGap: 0,
+		selfDestroy: !0
+	}, function () {
+		window.console && ($(".cls-1").css("fill", "#1b75bc"), $(".cls-2").css("fill", "#1b75bc"), $("path").attr("stroke-width", "0"),
+			$('.loading-circle-wrapper').delay(1000).queue(function (next) {
+				$(this).css({
+					"opacity": "0",
+					"z-index": "-1"
+				});
+				next();
+			})
+		)
+	});
+}));
+document.addEventListener('DOMContentLoaded', (e) => {
+		toggleMenuMobile();
+		moveNavitem();
+		EXIMMainBanner();
+		checkLayoutBanner();
+		checkFooter();
+		listSlide();
+		moveBreadcrum();
+		Slidepage();
+		toolBout();
+		tabsDescription();
+		scrollSidebar();
+		coutingNumber();
+		ListnavCetalogry();
+		FilterNav();
+>>>>>>> Stashed changes
 });

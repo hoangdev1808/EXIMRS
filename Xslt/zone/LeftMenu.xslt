@@ -7,6 +7,7 @@
         <div class="tool-ctrl">
             <em class="material-icons">api</em>
         </div>
+		<div class="title"><h2>GIỚI THIỆU</h2></div>
         <ul id="sideBar">
             <xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
         </ul>

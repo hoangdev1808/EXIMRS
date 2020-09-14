@@ -34,6 +34,11 @@
                         <xsl:text>nav-item active</xsl:text>
                     </xsl:attribute>
                 </xsl:if>
+                <xsl:if test="ZoneId=83">
+                    <xsl:attribute name="class">
+                        <xsl:text>nav-item dropdown</xsl:text>
+                    </xsl:attribute>
+                </xsl:if>
                 <a class="nav-link">
                     <xsl:attribute name="href">
                         <xsl:value-of select="Url"></xsl:value-of>
@@ -43,7 +48,34 @@
                     </xsl:attribute>
                     <xsl:value-of select="Title"></xsl:value-of>
                 </a>
+                <xsl:if test="count(Zone)>0">
+                    <xsl:choose>
+                        <xsl:when test="ZoneId=83">
+                            <ul class="sub-menu">
+                                <xsl:apply-templates select="Zone" mode="Dropdown"></xsl:apply-templates>
+                            </ul>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:if>
             </li>
         </xsl:if>
+    </xsl:template>
+    <xsl:template match="Zone" mode="Dropdown">
+        <li>
+            <xsl:if test="IsActive='true'">
+                <xsl:attribute name="class">
+                    <xsl:text>active</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="Url"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="Title"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:value-of select="Title"></xsl:value-of>
+            </a>
+        </li>
     </xsl:template>
 </xsl:stylesheet>

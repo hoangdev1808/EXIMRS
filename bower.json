@@ -21,6 +21,11 @@
     "bootstrap": "^4.5.0",
     "swiper": "^4.5.0",
     "pagePiling.js": "pagepiling.js#^1.5.6",
+<<<<<<< Updated upstream
     "aos": "^2.3.4"
+=======
+    "slick-carousel": "^1.8.1",
+    "vivus": "^0.4.4"
+>>>>>>> Stashed changes
   }
 }

@@ -10,10 +10,10 @@
             </h1>
         </div>
         <div class="row">
-            <div class="col-xl-7 col-md-6">
+            <div class="col-xl-7 col-md-6 animation-left">
                 <xsl:apply-templates select="/NewsList/News" mode="Left"></xsl:apply-templates>
             </div>
-            <div class="col-xl-5 col-md-6">
+            <div class="col-xl-5 col-md-6 animation-right">
                 <xsl:apply-templates select="/NewsList/News" mode="Right"></xsl:apply-templates>
             </div>
         </div>

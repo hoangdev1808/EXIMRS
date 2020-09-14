@@ -36,6 +36,7 @@
     "fibers": "^5.0.0",
     "graceful-fs": "^4.2.4",
     "gulp-rename": "^2.0.0",
+    "gulp-terser": "^1.4.0",
     "gulp-webfont": "0.0.1-4",
     "material-icons": "^0.3.1"
   },

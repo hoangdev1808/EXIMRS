@@ -9,7 +9,7 @@
         </div>
     </xsl:template>
     <xsl:template match="Product">
-        <div class="col-xl-4 col-md-6 col-sm-6">
+        <div class="col-xl-4 col-md-6 col-sm-6 animation-left">
             <figure>
                 <a href="">
                     <div class="small-img">
