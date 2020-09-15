@@ -1,14 +1,14 @@
-#loading-container
+#loading-container 
 	position: fixed
 	top: 0
 	right: 0
 	bottom: 0
 	left: 0
 	z-index: 99999
-	transition-delay: 10s
+	transition: 1s ease-in-out
 	background-color: #ffffff
 
-	.loading-wrapper
+	.loading-wrapper 
 		position: absolute
 		padding-bottom: 75px
 		top: 50%
@@ -17,7 +17,46 @@
 		width: 100%
 		max-width: 450px
 		padding: 0 20px
+	#loading-logo 
+		text-align: center
+		padding: 20px 0
+		img,
+		svg 
+			width: 100%
+		svg
+			path 
+				&#fill
+					opacity: 0.5
+					transition: opacity 1s
+					stroke: #1b75bc
+					stroke-width: 1.5
+					animation: fill 10s linear infinite forwards
 
-	&.active
+	.progress 
+		height: 15px
+		background-color: #e9ecef
+		box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 3px black
+		border-radius: 8px
+		overflow: hidden
+		visibility: hidden
+
+	#progress-bar 
+		max-width: 100%
+		width: 0%
+		height: 100%
+		background-color: #FF9E0C
+		background-image: linear-gradient(45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent)
+		background-size: 1rem 1rem
+		background-repeat: repeat
+		animation: background 10s linear infinite forwards
+		visibility: hidden
+	
+
+	.progress-status 
+		margin-top: 15px
+		text-align: center
+		font-size: 16px
+		letter-spacing: 3px
+		font-weight: 600
 		opacity: 0
-		transition: all easer-in-out .3s
+

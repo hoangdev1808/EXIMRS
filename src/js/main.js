@@ -326,25 +326,26 @@ function FilterNav() {
 	})
 }
 if ($(document).ready(function () {
-	new Vivus("logo", {
-		// type: "oneByOne",
-		duration: 150,
-		start: "autostart",
-		forceRender: !1,
-		dashGap: 0,
-		selfDestroy: !0
-	}, function () {
-		window.console && ($(".cls-1").css("fill", "#1b75bc"), $(".cls-2").css("fill", "#1b75bc"), $("path").attr("stroke-width", "0"),
-			$('.loading-circle-wrapper').delay(1000).queue(function (next) {
-				$(this).css({
-					"opacity": "0",
-					"z-index": "-1"
-				});
-				next();
-			})
-		)
+	new Vivus('logo', {
+		type: 'sync',
+		animTimingFunction: Vivus.EASE_IN,
+		duration: 80
+		},
+		function() {
+			$('path').attr('style','opacity: 1.0; fill: #1b75bc;');
+		}
+	);
+	window.addEventListener('load', (event) => {
+		$('#loading-container').delay(1500).fadeOut();
 	});
+	// $('#loading-container').delay(1500).fadeOut();
+	// 	$('body').css({
+	// 		display: "block"
+	// 	});
 }));
+function formHr(){
+	$('#form-hr').appendTo('#form-inner')
+}
 document.addEventListener('DOMContentLoaded', (e) => {
 		toggleMenuMobile();
 		moveNavitem();
@@ -360,4 +361,5 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		coutingNumber();
 		ListnavCetalogry();
 		FilterNav();
+		formHr();
 });
