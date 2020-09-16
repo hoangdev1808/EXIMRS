@@ -1,4 +1,3 @@
-import Loading from './loading'
 const toggleMenuMobile = () => {
 	$(".toggle-menu").on("click", function() {
 		$(this).toggleClass("active");
@@ -326,40 +325,45 @@ function FilterNav() {
 	})
 }
 if ($(document).ready(function () {
-	new Vivus('logo', {
-		type: 'sync',
-		animTimingFunction: Vivus.EASE_IN,
-		duration: 80
-		},
-		function() {
-			$('path').attr('style','opacity: 1.0; fill: #1b75bc;');
-		}
-	);
-	window.addEventListener('load', (event) => {
-		$('#loading-container').delay(1500).fadeOut();
+	new Vivus("logo", {
+		// type: "oneByOne",
+		duration: 110,
+		start: "autostart",
+		forceRender: !1,
+		dashGap: 0,
+		selfDestroy: !0
+	}, function () {
+		window.console && ($(".cls-1").css("fill", "#1b75bc"), $(".cls-2").css("fill", "#1b75bc"), $("path").attr("stroke-width", "0")
+		)
 	});
-	// $('#loading-container').delay(1500).fadeOut();
-	// 	$('body').css({
-	// 		display: "block"
-	// 	});
 }));
+
+function loading(){
+	$(window).on('load', function(){
+		$('#loading-container').delay(1850).queue(function (next) {
+			$(this).addClass('complete')
+			next();
+		})
+	})
+}
 function formHr(){
 	$('#form-hr').appendTo('#form-inner')
 }
 document.addEventListener('DOMContentLoaded', (e) => {
-		toggleMenuMobile();
-		moveNavitem();
-		EXIMMainBanner();
-		checkLayoutBanner();
-		checkFooter();
-		listSlide();
-		moveBreadcrum();
-		Slidepage();
-		toolBout();
-		tabsDescription();
-		scrollSidebar();
-		coutingNumber();
-		ListnavCetalogry();
-		FilterNav();
-		formHr();
+	loading();
+	toggleMenuMobile();
+	moveNavitem();
+	EXIMMainBanner();
+	checkLayoutBanner();
+	checkFooter();
+	listSlide();
+	moveBreadcrum();
+	Slidepage();
+	toolBout();
+	tabsDescription();
+	scrollSidebar();
+	coutingNumber();
+	ListnavCetalogry();
+	FilterNav();
+	formHr();
 });
