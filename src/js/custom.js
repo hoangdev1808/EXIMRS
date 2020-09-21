@@ -152,3 +152,9 @@ function loadProductCategories($select) {
 		}
 	});
 }
+function searchbox(){
+	$('#desktop #searchbox').on('click', function(){
+		alert('test')
+		// $('#desktop #search-box').toggleClass('active')
+	})
+}

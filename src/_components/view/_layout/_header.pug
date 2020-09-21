@@ -9,6 +9,11 @@ header
 			.main-nav
 				.top-nav
 					#desktop
+						#search-box
+							.form-group
+								input.form-control(type="text" placeholder="Tìm sản phẩm...")
+								button.searchbutton.btn.btn__search
+									em.material-icons search
 						.hotline
 							em.ri-phone-fill
 							a(href="tel:0828 92 97 99") 0828 92 97 99
@@ -19,15 +24,11 @@ header
 							li
 								a(href="")
 									em.ri-youtube-fill
-						a.search(data-fancybox data-animation-duration="700" data-src="#searchfancybox" href="javascript:;")
+						a.search#searchbox(href="javascript:;")
 							em.material-icons search
-							
 						.language.dropdown
 							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown')
 								a(href="") VN
-							//- .dropdown-menu
-							//- 	a.dropdown-item(href='#') EN
-							//- 	a.dropdown-item(href="") VN
 				ul.nav-list
 					li.nav-item.active
 						a.nav-link(href="index.html")

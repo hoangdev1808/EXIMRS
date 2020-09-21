@@ -39,11 +39,17 @@
 							<div class="main-nav">
 								<div class="top-nav">
 									<div id="desktop">
+										<div id="search-box">
+											<div class="form-group">
+												<input class="form-control" type="text" placeholder="Tìm sản phẩm...">
+												<button class="searchbutton btn btn__search"><em class="material-icons">search</em></button>
+											</div>
+										</div>
 										<div class="hotline"><em class="ri-phone-fill"></em><a href="tel:0828 92 97 99">0828 92 97 99</a></div>
 										<ul class="social">
 											<li><a href=""><em class="ri-facebook-fill"></em></a></li>
 											<li><a href=""><em class="ri-youtube-fill"></em></a></li>
-										</ul><a class="search" data-fancybox data-animation-duration="700" data-src="#searchfancybox" href="javascript:;"><em class="material-icons">search</em></a>
+										</ul><a class="search" id="searchbox" href="javascript:;"><em class="material-icons">search</em></a>
 										<div class="language dropdown">
 											<button class="dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown"><a href="">VN</a></button>
 										</div>
@@ -259,16 +265,6 @@
 						</div>
 					</div>
 				</footer>
-			</div>
-			<div id="searchfancybox" style="display: none;">
-				<div class="container">
-					<div class="content">
-						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Tìm sản phẩm...">
-							<button class="searchbutton btn btn__search"><em class="material-icons">search</em></button>
-						</div>
-					</div>
-				</div>
 			</div>
 		</form><script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
 		<script type="text/javascript" src="./js/core.min.js"></script>

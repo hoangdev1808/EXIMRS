@@ -115,10 +115,10 @@ body
 			list-style: none
 
 			li 
-				background-color: rgb(255, 255, 255);
-				box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
-				width: 40px;
-				height: 40px;
+				background-color: rgb(255, 255, 255)
+				box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+				width: 40px
+				height: 40px
 				margin-right: 20px
 				display: flex
 				align-items: center
@@ -345,97 +345,6 @@ body
 	.acc__panel 
 		display: none
 		margin: 0
-.searchbox 
-	position: relative
-	width: 100%
-	height: 100vh
-	border-radius: 0
-	overflow: hidden
-	transform: translateY(-50px)
-	transition: all .7s
-	background-color: transparent
-
-	.content 
-		position: relative
-		height: 100vh
-
-		.form-group 
-			width: 100%
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-
-			.form-control 
-				width: 100%
-				background-color: transparent
-				border: none
-				border-bottom: 3px solid #fff
-				border-radius: 0
-				color: #fff
-				font-size: 50px
-
-				&:focus 
-					outline: none
-					box-shadow: none
-				
-
-				&::placeholder 
-					color: #fff
-				
-				@media screen and ( max-width: 1024px)
-					font-size: 25px
-				
-				@media screen and ( max-width: 375px)
-					font-size: 15px
-				
-			
-
-			.searchbutton 
-				position: absolute
-				right: 0
-				top: 50%
-				transform: translateY(-50%)
-
-				.material-icons 
-					font-size: 50px
-					color: #fff
-					@media screen and ( max-width: 1024px)
-						font-size: 25px
-					
-				
-			
-		
-	
-
-	input 
-		transform: translateY(-50px)
-		opacity: 0
-		transition-property: transform, opacity
-		transition-duration: .4s
-	
-
-	button 
-		transform: translateY(-50px)
-		opacity: 0
-		transition-property: transform, opacity
-		transition-duration: .4s
-	
-.fancybox-slide--current 
-	.searchbox 
-		transform: translateY(0)
-		opacity: 1
-
-		input 
-			transform: translateY(0)
-			opacity: 1
-			transition-delay: .1s
-		
-
-		button 
-			transform: translateY(0)
-			opacity: 1
-			transition-delay: .3s
 
 .swiper-button-next,
 .swiper-button-prev
@@ -546,3 +455,107 @@ body
 				padding: 10px
 		&.fixed
 			padding: 15px
+
+.search-page 
+	padding: 60px 0
+
+	.search-page-top 
+		.page-header 
+			h1 
+				font-size: 36px
+				font-family: "Montserrat"
+				font-weight: 500
+				color: #333333
+
+				@media(max-width: 1025px) 
+					font-size: 26px
+				
+			
+		
+
+		.searchcontrols 
+			padding: 30px 0
+
+			.form-inline 
+				.form-group 
+					width: 100%
+					position: relative
+					.form-control 
+						border: solid 1px #a1a1a1
+						width: 100%
+						height: 40px
+						border-radius: 0
+						&:focus
+							box-shadow: none
+
+					.seachpage-btn 
+						display: none
+
+	.searchresults 
+		.modulepager 
+			display: flex
+			align-items: center
+			padding-bottom: 30px
+			&:nth-child(1)
+				display: none
+				
+			.pagination 
+				padding: 0
+				list-style: none
+
+				li 
+					background-color: rgb(255, 255, 255)
+					width: 38px
+					height: 38px
+					margin-right: 20px
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					transition: ease-in-out all .3s
+
+					a 
+						font-size: 18px
+						color: $main-color
+						text-decoration: none
+						font-family: 'Montserrat'
+						width: 100%
+						height: 100%
+						text-align: center
+						line-height: 38px
+					
+
+					&:hover 
+						background-color: $main-color
+
+						a 
+							color: #fff
+						
+					
+
+					&.active 
+						span 
+							color: #fff
+							width: 100%
+							height: 100%
+							text-align: center
+							line-height: 38px
+						
+
+						background-color: $main-color
+					
+				
+
+			
+		
+	
+	.searchresultlist
+		.searchresult
+			.NeatHtml
+				h3
+					font-size: 18px
+					a
+						font-size: 25px
+						font-weight: 500
+						color: #1A0DAB
+						text-decoration: none

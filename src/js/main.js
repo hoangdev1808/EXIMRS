@@ -340,7 +340,7 @@ if ($(document).ready(function () {
 
 function loading(){
 	$(window).on('load', function(){
-		$('#loading-container').delay(1850).queue(function (next) {
+		$('#loading-container').delay(1800).queue(function (next) {
 			$(this).addClass('complete')
 			next();
 		})
@@ -349,7 +349,14 @@ function loading(){
 function formHr(){
 	$('#form-hr').appendTo('#form-inner')
 }
-document.addEventListener('DOMContentLoaded', (e) => {
+
+function searchbox(){
+	$('#desktop #searchbox').on('click', function(){
+		$('#desktop #search-box').toggleClass('active')
+	})
+}
+document.addEventListener('DOMContentLoaded', () => {
+	searchbox();
 	loading();
 	toggleMenuMobile();
 	moveNavitem();
