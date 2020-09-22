@@ -47,6 +47,7 @@
             <section class="section-child pro-detail-2" id="pro-2">
                 <div class="container">
                     <div class="row">
+						<div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>
                                 <xsl:value-of disable-output-escaping="yes" select="News/Title"></xsl:value-of>
@@ -97,6 +98,7 @@
             <section class="section-child pro-detail-4" id="pro-4">
                 <div class="container">
                     <div class="row">
+						<div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>Mặt bằng</h2>
                             <div class="tab-panels">
@@ -120,6 +122,7 @@
             <section class="section-child pro-detail-5" id="pro-5">
                 <div class="container">
                     <div class="row">
+						<div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
@@ -142,6 +145,7 @@
             <section class="section-child pro-detail-6" id="pro-6">
                 <div class="container">
                     <div class="row">
+						<div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>

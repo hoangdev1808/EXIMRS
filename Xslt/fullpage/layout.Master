@@ -54,11 +54,7 @@
 						<div class="main-nav">
 							<div class="top-nav">
 								<div id="desktop">
-									<div id="search-box">
-										<div class="form-group">
-											<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
-										</div>
-									</div>
+									<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
 									<portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
 									<a class="search" id="searchbox" href="javascript:;"><em class="material-icons">search</em></a>
 									<portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
@@ -107,7 +103,7 @@
 									<div class="col-xl-6 col-md-6 animation-bottom">
 										<div class="left">
 											<portal:modulewrapper id="mdl179" runat="server" configuremoduleid="179" />
-											<a class="btn-detail" href="">xem thêm
+											<a class="btn-detail" href="/du-an">xem thêm
 												<div class="icon"></div></a>
 										</div>
 									</div>
@@ -116,11 +112,15 @@
 									</div>
 								</div>
 								<portal:modulewrapper id="mdl181" runat="server" configuremoduleid="181" />
+								<a class="btn-detail-mobile" href="/du-an">xem thêm
+									<div class="icon"></div></a>
 							</div>
 						</section>
 						<section class="section h-5">
 							<div class="container">
 								<portal:modulewrapper id="mdl182" runat="server" configuremoduleid="182" />
+								<a class="btn-detail-mobile" href="/tin-tuc-1">xem thêm
+									<div class="icon"></div></a>
 							</div>
 						</section>
 						<section class="section h-6">
@@ -148,22 +148,22 @@
 									<div class="col-xl-7 col-md-6 col-sm-12 animation-right">
 										<div class="footer-left">
 											<div class="row">
-												<div class="col-xl-6 col-md-6 col-sm-6 col-12">
+												<div class="col-xl-6 col-md-12">
 													<div class="footer-card">
 														<portal:modulewrapper id="mdl186" runat="server" configuremoduleid="186" />
 													</div>
 												</div>
-												<div class="col-xl-6 col-md-6 col-sm-6 col-12">
+												<div class="col-xl-6 col-md-6 col-sm-6 col-12 dekstop">
 													<div class="footer-card">
 														<portal:modulewrapper id="mdl190" runat="server" configuremoduleid="190" />
 													</div>
 												</div>
-												<div class="col-xl-6 col-md-6 col-sm-6 col-12">
+												<div class="col-xl-6 col-md-6 col-sm-6 col-12 dekstop">
 													<div class="footer-card">
 													<portal:modulewrapper id="mdl191" runat="server" configuremoduleid="191" />
 													</div>
 												</div>
-												<div class="col-xl-6 col-md-6 col-sm-6 col-12">
+												<div class="col-xl-6 col-md-6 col-sm-6 col-12 dekstop">
 													<div class="footer-card">
 													<portal:modulewrapper id="mdl192" runat="server" configuremoduleid="192" />
 													</div>

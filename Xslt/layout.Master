@@ -51,11 +51,7 @@
 							<div class="main-nav">
 								<div class="top-nav">
 									<div id="desktop">
-										<div id="search-box">
-											<div class="form-group">
-												<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
-											</div>
-										</div>
+										<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
 										<portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
 										<a class="search" id="searchbox" href="javascript:;"><em class="material-icons">search</em></a>
 										<portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
@@ -98,18 +94,18 @@
 								<portal:modulewrapper id="mdl159" runat="server" configuremoduleid="159" />
 								</div>
 							</div>
-							<div class="col-xl-2 col-md-6 col-sm-6 col-6">
+							<div class="col-xl-2 col-md-6 col-sm-6 col-6 dekstop">
 								<div class="footer-card">
 									<portal:modulewrapper id="mdl160" runat="server" configuremoduleid="160" />
 								</div>
 							</div>
-							<div class="col-xl-2 col-md-6 col-sm-6">
+							<div class="col-xl-2 col-md-6 col-sm-6 dekstop">
 								<div class="footer-card">
 									<portal:modulewrapper id="mdl161" runat="server" configuremoduleid="161" />
 									
 								</div>
 							</div>
-							<div class="col-xl-2 col-md-6 col-sm-6">
+							<div class="col-xl-2 col-md-6 col-sm-6 dekstop">
 								<div class="footer-card">
 								<portal:modulewrapper id="mdl162" runat="server" configuremoduleid="162" />
 								</div>
@@ -123,7 +119,8 @@
 										<p>Chúng tôi có thể giúp gì cho bạn?</p>
 									</div>
 									<div class="wrap-form">
-										<div class="form-group">
+										<portal:modulewrapper id="mdl195" runat="server" configuremoduleid="195" />
+										<%-- <div class="form-group">
 											<input type="text" placeholder="Họ và tên*">
 										</div>
 										<div class="form-group">
@@ -142,7 +139,7 @@
 											<div class="frm-btn">
 												<input class="btn btn-default frm-btn-submit" type="submit" name="" value="Gửi"><em class="material-icons">arrow_forward</em>
 											</div>
-										</div>
+										</div> --%>
 									</div>
 								</div>
 							</div>
