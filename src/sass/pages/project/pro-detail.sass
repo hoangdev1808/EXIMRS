@@ -139,7 +139,8 @@
 			img 
 				width: 100%
 				height: 100%
-		@media screen and ( max-width: 375px)
+				object-fit: cover
+		@media screen and ( max-width: 575px)
 			.img
 				height: auto
 .pro-detail-3
@@ -202,6 +203,8 @@
 						font-size: 36px
 					&:last-child
 						margin-right: 0
+					a 
+						font-size: 14px
 					@media screen and ( max-width: 575px)
 						font-size: 13px
 						.ri-arrow-drop-down-line
@@ -270,14 +273,6 @@
 				width: 100%
 				height: 100%
 				object-fit: cover
-			&::before
-				position: absolute
-				content: ''
-				width: 100%
-				height: 100%
-				top: 0
-				left: 0
-				background-color: rgba($color: #000, $alpha: .5)
 			.desc
 				position: absolute
 				top: 50%
@@ -398,12 +393,22 @@
 			display: flex
 			justify-content: center
 			.ModuleContent
+				@media screen and ( max-width: 575px)
+					width: 100%
+				.wrap-form
+					width: 100%
+					display: flex
+					@media screen and ( max-width: 575px)
+						flex-direction: column
 				div
 					div
 						div
 							display: flex
 							justify-content: center
 							float: left
+							@media screen and ( max-width: 575px)
+								flex-direction: column
+		
 		.form-group
 			position: relative
 			margin-right: 13px
@@ -454,9 +459,9 @@
 		height: auto
 		.title
 			h2
-				font-size: 20px
+				font-size: 18px
 			h1
-				font-size: 30px
+				font-size: 20px
 			h3 
 				font-size: 14px
 		.block-form

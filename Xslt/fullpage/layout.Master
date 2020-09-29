@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		<div id="wrapper">
-			<header>
+			<header class="kv-header">
 				<div class="container">
 					<nav>
 						<div class="toggle-menu"></div>
@@ -284,6 +284,7 @@
 				</div>
 			</footer>
 		</div>
+		<div id="overlay"></div>
 		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
 			<div class="row">
 				<div class="col-lg-12">

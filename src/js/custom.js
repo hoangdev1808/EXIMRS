@@ -6,10 +6,6 @@ var txtProductName = 'input[name=ProductName]';
 
 
 $(document).ready(function() {
-	// $('.pro-detail-4 .dropdown-item').click(function(e){
-	// 	var src = $(this).data('src')
-	// 	$('#planImage').attr('src',src)
-	// }) 
 	CheckParamUrlToToggleFilter();
 	//Provinces
 	loadProvinces(slProvince);
@@ -155,6 +151,6 @@ function loadProductCategories($select) {
 function searchbox(){
 	$('#desktop #searchbox').on('click', function(){
 		alert('test')
-		// $('#desktop #search-box').toggleClass('active')
+		$('#desktop #search-box').toggleClass('active')
 	})
 }

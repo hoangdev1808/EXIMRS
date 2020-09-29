@@ -6,5 +6,26 @@ block var
 	- let titlePosition = ['Chi Tiết Dự án'];
 block main
 	include ./_layout/_breadcrumb.pug
+	#fake-section
+		.container
+			.row
+				.col-xl-3.fake-sidebar
+					#sidebar-wrapper(data-aos="fade-right")
+						.tool-ctrl
+							em.material-icons api
+						ul#sideBar
+							li.active
+								a(href="") Về chúng tôi
+							li
+								a(href="") Lịch sử hình thành
+							li
+								a(href="") Đội ngũ nhân sự
+							li
+								a(href="") Tôn chỉ hoạt động
+							li
+								a(href="") Hệ thống giao dịch
+							li
+								a(href="") Đối tác - khách hàng
+				.col-xl-9
 	include ../project/project-detail.pug
 block scripts

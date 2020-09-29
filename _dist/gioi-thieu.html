@@ -30,7 +30,7 @@
 				</div>
 			</div>
 			<div class="ov-h" id="wrapper">
-				<header>
+				<header class="kv-header">
 					<div class="container">
 						<nav>
 							<div class="toggle-menu"></div>
@@ -64,7 +64,12 @@
 											<li><a href="">SaiGon Real</a></li>
 										</ul>
 									</li>
-									<li class="nav-item"><a class="nav-link" href="du-an.html">Dự án</a></li>
+									<li class="nav-item dropdown"><a class="nav-link" href="du-an.html">Dự án</a>
+										<ul class="sub-menu mobile">
+											<li><a href="">Căn hộ</a></li>
+											<li><a href="">Đất nền</a></li>
+										</ul>
+									</li>
 									<li class="nav-item"><a class="nav-link" href="tin-tuc.html">Tin tức</a></li>
 									<li class="nav-item"><a class="nav-link" href="hinh-anh.html">thư viện</a></li>
 									<li class="nav-item"><a class="nav-link" href="tuyen-dung.html">tuyển dụng</a></li>
@@ -87,10 +92,10 @@
 							</ol>
 						</div>
 					</div>
-					<section class="section-child a-1">
+					<div id="fake-section">
 						<div class="container">
 							<div class="row">
-								<div class="col-xl-3">
+								<div class="col-xl-3 fake-sidebar">
 									<div id="sidebar-wrapper" data-aos="fade-right">
 										<div class="tool-ctrl"><em class="material-icons">api</em></div>
 										<ul id="sideBar">
@@ -103,6 +108,14 @@
 										</ul>
 									</div>
 								</div>
+								<div class="col-xl-9"></div>
+							</div>
+						</div>
+					</div>
+					<section class="section-child a-1" id="about-1">
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-3"></div>
 								<div class="col-xl-9">
 									<div class="a-1__content" data-aos="fade-right">
 										<div class="block-title">
@@ -464,6 +477,7 @@
 					</div>
 				</footer>
 			</div>
+			<div id="overlay"></div>
 		</form><script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
 		<script type="text/javascript" src="./js/core.min.js"></script>
 		<script type="text/javascript" src="./js/fullpage.min.js"></script>

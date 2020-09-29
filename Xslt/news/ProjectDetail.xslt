@@ -8,14 +8,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3">
-                        <div id="sidebar-wrapper">
-                            <div class="tool-ctrl">
-                                <em class="material-icons">api</em>
-                            </div>
-                            <ul id="sideBar">
-                                <xsl:apply-templates select="Zone" mode="Nav"></xsl:apply-templates>
-                            </ul>
-                        </div>
                     </div>
                     <div class="col-xl-9 content">
                         <xsl:apply-templates select="Zone[1]" mode="Zone-1"></xsl:apply-templates>
@@ -25,7 +17,7 @@
         </section>
         <xsl:apply-templates select="Zone" mode="List-2"></xsl:apply-templates>
     </xsl:template>
-    <xsl:template match="Zone" mode="Nav">
+	 <xsl:template match="Zone" mode="Nav">
         <li>
             <a>
                 <xsl:attribute name="href">

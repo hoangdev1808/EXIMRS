@@ -1,4 +1,4 @@
-header
+header.kv-header
 	.container
 		nav
 			.toggle-menu
@@ -42,8 +42,13 @@ header
 								a(href="") City Real
 							li
 								a(href="") SaiGon Real
-					li.nav-item
+					li.nav-item.dropdown
 						a.nav-link(href="du-an.html") Dự án
+						ul.sub-menu.mobile
+							li
+								a(href="") Căn hộ
+							li
+								a(href="") Đất nền
 					li.nav-item
 						a.nav-link(href="tin-tuc.html") Tin tức
 					li.nav-item

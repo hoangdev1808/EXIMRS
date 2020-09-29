@@ -1,4 +1,4 @@
-header
+.kv-header
 	position: fixed
 	width: 100%
 	z-index: 999
@@ -30,8 +30,9 @@ header
 				margin-right: 20px
 			@media screen and ( max-width: 1024px)
 				width: 110px
-				margin: 0 auto
+				margin-right: auto
 				height: unset
+				order: 1
 		.main-nav
 			display: flex
 			width: 100%
@@ -187,14 +188,15 @@ header
 						color: rgb(17, 17, 17)
 						font-weight: 500
 						text-transform: uppercase
-						
 						.material-icons
 							font-size: 24px
 							font-family: "Material Icons"
 							color: rgb(17, 17, 17)
-					&:hover
-						.nav-link
-							color: $main-color
+						
+					@media screen and ( min-width: 1024px)
+						&:hover
+							.nav-link
+								color: $main-color
 					&.active
 						.nav-link
 							color: $main-color
@@ -203,6 +205,8 @@ header
 					&.dropdown
 						position: relative
 						cursor: pointer
+						.nav-link
+							pointer-events: auto
 						&::before
 							position: absolute
 							top: 100%
@@ -222,16 +226,21 @@ header
 							padding-left: 0
 							list-style: none
 							li 
+								border-bottom: solid 1px #f5f5f5
 								padding: 15px
 								&:last-child
-									border-top: solid 1px #f5f5f5
-						&:hover
-							.sub-menu
-								display: block
-								opacity: 1
-								visibility: visible
-								top: 156%
-								transition: all ease-in-out .3s
+									border: none
+						&.active
+							.nav-link
+								color: $main-color
+						@media screen and ( min-width: 1024px)
+							&:hover
+								.sub-menu
+									display: block
+									opacity: 1
+									visibility: visible
+									top: 156%
+									transition: all ease-in-out .3s
 				@media screen and ( max-width: 1199px)
 					.nav-item
 						.nav-link
@@ -299,11 +308,12 @@ header
 					.search
 						display: none
 			@media screen and ( max-width:  1024px)
+				width: 80%
 				height: 100vh
 				position: absolute
 				right: -100%
 				top: 100%
-				background: #ffffff
+				background: #1a77b9
 				transition: ease-in-out all .3s
 				.nav-list
 					width: 100%
@@ -311,19 +321,52 @@ header
 					flex-direction: column
 					.nav-item
 						width: 100%
+						padding: 0
 						margin-left: 0
-						padding: 10px 0
-						border-bottom: solid 1px $main-color
+						border-bottom: solid 1px #ffffff
 						justify-content: center
+						&.dropdown
+							position: static
+							display: flex
+							flex-direction: column
+							.nav-link
+								pointer-events: none
+							.sub-menu
+								transition: unset
+								display: none
+								visibility: visible
+								opacity: 1
+								padding: 0
+								position: relative
+								background-color: rgba($color: #000, $alpha: .2)
+								width: 100%
+								text-align: center
+								li
+									border-bottom: solid 1px #ffffff
+									a 
+										color: #ffffff
+										font-size: 12px
+						.nav-link
+							color: #fff
+							padding: 15px 0
 						&:first-child
 							width: 100%
-							border-top: solid 1px $main-color
-							border-bottom: solid 1px $main-color
+							border-bottom: solid 1px #fff
 							border: none
-							padding: 10px 0
+							padding: 0
 							height: auto
-						&:last-child
-							border: none
+							.nav-link
+								padding: 15px 0
+								.material-icons
+									color: #ffffff
+						&.active
+							background-color: #fff
+							.nav-link
+								color: $main-color
+							&:first-child
+								.nav-link
+									.material-icons
+										color: $main-color
 				&.active
 					right: 0
 					transition: ease-in-out all .3s
@@ -331,6 +374,8 @@ header
 			display: none
 			@media screen and ( max-width: 1024px)
 				display: block
+				order: 2
+				margin-right: 20px
 				#desktop
 					display: flex
 					align-items: center
@@ -345,7 +390,7 @@ header
 						left: 0
 						.form-group
 							width: 100%
-							height: 26px
+							height: 40px
 							margin-bottom: 0
 							display: flex
 							align-items: center
@@ -357,8 +402,8 @@ header
 								padding-left: 15px
 							.searchbutton
 								background-color: rgb(26, 119, 185)
-								width: 26px
-								height: 26px
+								width: 40px
+								height: 40px
 								display: flex
 								align-items: center
 								justify-content: center
@@ -377,14 +422,17 @@ header
 					.social
 						display: none
 					.search
-						background-color: rgb(245, 245, 245)
+						margin-right: 10px
+						background-color: transparent
 						width: 26px
 						height: 26px
 						text-align: center
+						border: none
 						.material-icons
-							font-size: 18px
-							color: #666666
+							font-size: 25px
+							color: $main-color
 							line-height: 26px
+							font-weight: 900
 					.language
 						margin-left: auto
 						button
@@ -392,7 +440,6 @@ header
 							display: flex
 							align-items: center
 							padding: 0
-							padding-left: 7px
 							a
 								font-size: 16px
 								font-family: "Montserrat"
@@ -423,6 +470,7 @@ header
 			display: none
 			@media screen and ( max-width:  1024px)
 				display: block
+				order: 3
 			&:before,
 			&:after 
 				position: absolute
