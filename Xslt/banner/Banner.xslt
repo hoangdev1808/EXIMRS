@@ -8,6 +8,7 @@
             <div class="swiper-wrapper">
                 <xsl:apply-templates select="/BannerList/Banner" mode="Slider"></xsl:apply-templates>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </xsl:template>
     <xsl:template match="Banner" mode="Slider">

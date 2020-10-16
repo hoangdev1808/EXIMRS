@@ -199,12 +199,17 @@ function projectImage() {
 
 
 function createPagination() {
-	$('main').append("<div id=\"nav-pagination\"><ul></ul></div>")
+	$('main').append("<div id='nav-pagination'><ul></ul></div>")
+	var lstSection = $(".full-page section, footer");
 	for (let i = 0; i < totalSlideNumber; i++) {
+		var spanHtml = "";
+		if ($(lstSection[i]).attr("data-title") != undefined) {
+			spanHtml = " <span>" + $(lstSection[i]).attr("data-title") + "</span>";
+		}
 		if (i == 0) {
-			$('#nav-pagination ul').append('<li class=\'active\' data-section=\'' + (i + 1) + '\'>' + (i + 1) + '</li>')
+			$('#nav-pagination ul').append('<li class=\'active\' data-section=\'' + (i + 1) + '\'>' + (i + 1) + spanHtml+'</li>')
 		} else {
-			$('#nav-pagination ul').append('<li data-section=\'' + (i + 1) + '\'>' + (i + 1) + '</li>')
+			$('#nav-pagination ul').append('<li data-section=\'' + (i + 1) + '\'>' + (i + 1) + spanHtml + '</li>')
 		}
 	}
 	$('#nav-pagination ul li').on('click', function() {

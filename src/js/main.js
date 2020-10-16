@@ -34,6 +34,11 @@ function EXIMMainBanner() {
 			delay: 3500,
 			disableOnInteraction: false
 		},
+		pagination: {
+            el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+        },
 	});
 }
 

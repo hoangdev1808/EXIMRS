@@ -82,22 +82,22 @@
 					<asp:ContentPlaceHolder ID="mainContent" runat="server">
 					</asp:ContentPlaceHolder>
 					<div class="full-page">
-						<section class="section h-1" id="main-banner">
+						<section class="section h-1" data-title="Trang chủ" id="main-banner">
 								<div class="main-banner" data-aos="fade-up">
 									<portal:modulewrapper id="mdl174" runat="server" configuremoduleid="174" />
 								</div>
 						</section>
-						<section class="section h-2">
+						<section class="section h-2" data-title="Về chúng tôi">
 							<div class="container">
 								<portal:modulewrapper id="mdl175" runat="server" configuremoduleid="175" />
 							</div>
 						</section>
-						<section class="section h-3">
+						<section class="section h-3" data-title="Lĩnh vực hoạt dộng">
 							<div class="container">
 								<portal:modulewrapper id="mdl178" runat="server" configuremoduleid="178" />
 							</div>
 						</section>
-						<section class="section h-4">
+						<section class="section h-4" data-title="Dự án Eximrs">
 							<div class="container">
 								<div class="row">
 									<div class="col-xl-6 col-md-6 animation-bottom">
@@ -116,14 +116,14 @@
 									<div class="icon"></div></a>
 							</div>
 						</section>
-						<section class="section h-5">
+						<section class="section h-5" data-title="Tin tức - Sự kiện">
 							<div class="container">
 								<portal:modulewrapper id="mdl182" runat="server" configuremoduleid="182" />
 								<a class="btn-detail-mobile" href="/tin-tuc-1">xem thêm
 									<div class="icon"></div></a>
 							</div>
 						</section>
-						<section class="section h-6">
+						<section class="section h-6" data-title="Suy nghĩ hành động">
 							<div class="container">
 								<div class="row">
 									<div class="col-xl-7 col-md-6"></div>
@@ -137,12 +137,12 @@
 								</div>
 							</div>
 						</section>
-						<section class="section h-7">
+						<section class="section h-7" data-title="Đối tác - Khách hàng">
 							<div class="container">
 								<portal:modulewrapper id="mdl185" runat="server" configuremoduleid="185" />
 							</div>
 						</section>
-						<section class="section h-8">
+						<section class="section h-8" data-title="Đăng ký nhận bản tin">
 							<div class="container">
 								<div class="row">
 									<div class="col-xl-7 col-md-6 col-sm-12 animation-right">

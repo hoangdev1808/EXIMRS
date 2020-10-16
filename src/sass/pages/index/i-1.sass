@@ -101,7 +101,14 @@
 							p
 								text-decoration: underline
 								color: #e95d68
-
+			.swiper-pagination
+				left: 50%
+				transform: translateX(-50%)
+				.swiper-pagination-bullet
+					width: 10px
+					height: 10px
+					&-active
+						background-color: $main-color
 	.swiper-button-prev,
 	.swiper-button-next
 		display: none
