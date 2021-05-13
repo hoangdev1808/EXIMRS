@@ -50,7 +50,7 @@ const server = () => {
 	], series(jsTask2));
 
 	watch([
-		"src/js/lib/fullpage.js"
+		"src/js/fullpage.js"
 	], series(jsFullPageTask));
 
 	watch([

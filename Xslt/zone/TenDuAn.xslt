@@ -8,13 +8,10 @@
     </xsl:template>
     <xsl:template match="Zone">
         <xsl:if test="IsActive='true'">
-            <div class="title">
-                <h2>Nhận thông tin ưu đãi chi tiết &amp; Tham quan dự án</h2>
-                <h1>
-                    <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-                </h1>
-                <h3>Nhận tài liệu dự án ngay - Hotline: 0909 109 155</h3>
-            </div>
+            <h2>Nhận thông tin ưu đãi chi tiết &amp; Tham quan dự án</h2>
+            <h1>
+                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+            </h1>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

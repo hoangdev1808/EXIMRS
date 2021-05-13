@@ -35,10 +35,10 @@ function EXIMMainBanner() {
 			disableOnInteraction: false
 		},
 		pagination: {
-            el: '.swiper-pagination',
+			el: '.swiper-pagination',
 			type: 'bullets',
 			clickable: true,
-        },
+		},
 	});
 }
 
@@ -107,6 +107,7 @@ function Slidepage() {
 		spaceBetween: 30,
 		speed: 2000,
 		loop: true,
+		clickable: true,
 		pagination: {
 			el: '.history-slide .swiper-pagination',
 			clickable: true,
@@ -144,6 +145,7 @@ function Slidepage() {
 		loop: true,
 		loopedSlides: 5,
 		slideToClickedSlide: true,
+		centeredSlides: true,
 		breakpoints: {
 			1280: {
 				slidesPerView: 5,
@@ -354,14 +356,35 @@ function activeMobileMenu() {
 }
 
 function scrollSidebar() {
-	$('#sidebar-wrapper').find('li').on('click', function() {
-		$('html, body').animate({
-			scrollTop: $($(this).attr('href')).offset().top
-		}, 500, 'linear');
-		
+	$('#sidebar-wrapper').find('li a').on('click', function(event) {
+		$(this).parents('li').addClass('active');
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 500, function() {
+				window.location.hash = hash;
+			});
+		}
+		$('#sidebar-wrapper').find('li a').not(this).parents('li').removeClass('active')
 	})
 }
 
+function phantrang() {
+	$('.modulepager').find('.pagination').find('li>a.NextPage, li>a.LastPage, li>a.BackPage, li>a.FirstPage').parent().hide()
+}
+
+function readMore() {
+	$('.pro-detail .content .show-more').on('click', function() {
+		$(this).toggleClass('active');
+		$(this).siblings('.table').toggleClass('active')
+	});
+}
+
+function moveButton() {
+	$('.footer-card .wrap-form .wrap-form .frm-btnwrap').appendTo('.footer-card .wrap-form .wrap-form .frm-captcha .RadCaptcha')
+}
 document.addEventListener('DOMContentLoaded', () => {
 	searchbox();
 	loading();
@@ -381,8 +404,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	formHr();
 	scrollSidebar();
 	activeMobileMenu();
-	$('.pro-detail-4 .dropdown-item').click(function(e){
+	phantrang();
+	readMore();
+	moveButton();
+	$('[data-fancybox]').fancybox({
+		loop : true,
+		thumbs: {
+			autoStart: true
+		}
+	})
+	$('.pro-detail-4 .dropdown-item').click(function(e) {
 		var src = $(this).data('src')
-		$('#planImage').attr('src',src)
+		$('#planImage').attr('src', src)
 	})
 });

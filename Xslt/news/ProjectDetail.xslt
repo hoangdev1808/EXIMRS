@@ -7,8 +7,7 @@
         <section class="section-child pro-detail" id="pro-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3">
-                    </div>
+                    <div class="col-xl-3"></div>
                     <div class="col-xl-9 content">
                         <xsl:apply-templates select="Zone[1]" mode="Zone-1"></xsl:apply-templates>
                     </div>
@@ -17,7 +16,7 @@
         </section>
         <xsl:apply-templates select="Zone" mode="List-2"></xsl:apply-templates>
     </xsl:template>
-	 <xsl:template match="Zone" mode="Nav">
+    <xsl:template match="Zone" mode="Nav">
         <li>
             <a>
                 <xsl:attribute name="href">
@@ -39,7 +38,7 @@
             <section class="section-child pro-detail-2" id="pro-2">
                 <div class="container">
                     <div class="row">
-						<div class="col-xl-3"></div>
+                        <div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>
                                 <xsl:value-of disable-output-escaping="yes" select="News/Title"></xsl:value-of>
@@ -90,7 +89,7 @@
             <section class="section-child pro-detail-4" id="pro-4">
                 <div class="container">
                     <div class="row">
-						<div class="col-xl-3"></div>
+                        <div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>Mặt bằng</h2>
                             <div class="tab-panels">
@@ -114,7 +113,7 @@
             <section class="section-child pro-detail-5" id="pro-5">
                 <div class="container">
                     <div class="row">
-						<div class="col-xl-3"></div>
+                        <div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
@@ -137,7 +136,7 @@
             <section class="section-child pro-detail-6" id="pro-6">
                 <div class="container">
                     <div class="row">
-						<div class="col-xl-3"></div>
+                        <div class="col-xl-3"></div>
                         <div class="col-xl-9 content">
                             <h2>
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
@@ -219,11 +218,11 @@
         </div>
         <div class="table">
             <xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
-            <div class="show-more">
-                <a class="view-more" href="">
-                    <xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
-                    <em class="ri-arrow-drop-down-line"></em>
-                </a>
+        </div>
+        <div class="show-more">
+            <div class="view-more">
+                <xsl:text disable-output-escaping="yes">Xem thêm</xsl:text>
+                <em class="material-icons">expand_more</em>
             </div>
         </div>
     </xsl:template>
@@ -231,14 +230,26 @@
         <div class="swiper-slide">
             <figure>
                 <div class="img">
-                    <img>
-                        <xsl:attribute name="src">
+                    <a>
+                        <xsl:attribute name="data-fancybox">
+                            <xsl:text disable-output-escaping="yes">gallery</xsl:text>
+                            <xsl:value-of select="NewsId" disable-output-escaping="yes"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:attribute name="href">
                             <xsl:value-of select="ImageUrl"></xsl:value-of>
                         </xsl:attribute>
-                        <xsl:attribute name="alt">
+                        <xsl:attribute name="title">
                             <xsl:value-of select="Title"></xsl:value-of>
                         </xsl:attribute>
-                    </img>
+                        <img>
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:value-of select="Title"></xsl:value-of>
+                            </xsl:attribute>
+                        </img>
+                    </a>
                 </div>
                 <figcaption>
                     <div class="desc">
@@ -249,6 +260,9 @@
                     </div>
                 </figcaption>
             </figure>
+            <div style="display: none;">
+                <xsl:apply-templates select="NewsImages" mode="Gallery"></xsl:apply-templates>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="News" mode="ZoneNews-4">
@@ -261,7 +275,7 @@
     </xsl:template>
     <xsl:template match="News" mode="ZoneNews-7">
         <div class="swiper-slide">
-            <a href="">
+            <a>
                 <xsl:attribute name="href">
                     <xsl:value-of select="Url"></xsl:value-of>
                 </xsl:attribute>
@@ -306,5 +320,29 @@
                 </img>
             </div>
         </div>
+    </xsl:template>
+    <xsl:template match="NewsImages" mode="Gallery">
+        <xsl:if test="position()>1">
+            <a>
+                <xsl:attribute name="data-fancybox">
+                    <xsl:text disable-output-escaping="yes">gallery</xsl:text>
+                    <xsl:value-of select="../NewsId" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="Title"></xsl:value-of>
+                </xsl:attribute>
+                <img >
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="ImageUrl"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </xsl:attribute>
+                </img>
+            </a>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

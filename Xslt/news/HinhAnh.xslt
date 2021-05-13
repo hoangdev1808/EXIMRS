@@ -29,14 +29,15 @@
                     <xsl:attribute name="title">
                         <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
-					<xsl:attribute name="data-fancybox">
-						<xsl:text>Image</xsl:text>
-					</xsl:attribute>
+                    <xsl:attribute name="data-fancybox">
+                        <xsl:text>Image</xsl:text>
+                        <xsl:value-of select="NewsId" disable-output-escaping="yes"></xsl:value-of>
+                    </xsl:attribute>
                     <figure>
                         <div class="big-img">
                             <img >
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                                    <xsl:value-of select="NewsImages[1]/ImageUrl"></xsl:value-of>
                                 </xsl:attribute>
                                 <xsl:attribute name="alt">
                                     <xsl:value-of select="Title"></xsl:value-of>
@@ -53,6 +54,9 @@
                         </figcaption>
                     </figure>
                 </a>
+                <div style="display: none;">
+                    <xsl:apply-templates select="NewsImages"></xsl:apply-templates>
+                </div>
             </div>
         </xsl:if>
     </xsl:template>
@@ -66,14 +70,15 @@
                     <xsl:attribute name="title">
                         <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
-					<xsl:attribute name="data-fancybox">
-						<xsl:text>Image</xsl:text>
-					</xsl:attribute>
+                    <xsl:attribute name="data-fancybox">
+                        <xsl:text>Image</xsl:text>
+                        <xsl:value-of select="NewsId" disable-output-escaping="yes"></xsl:value-of>
+                    </xsl:attribute>
                     <figure>
                         <div class="small-img">
                             <img >
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                                    <xsl:value-of select="NewsImages[1]/ImageUrl"></xsl:value-of>
                                 </xsl:attribute>
                                 <xsl:attribute name="alt">
                                     <xsl:value-of select="Title"></xsl:value-of>
@@ -90,6 +95,9 @@
                         </figcaption>
                     </figure>
                 </a>
+                <div style="display: none;">
+                    <xsl:apply-templates select="NewsImages"></xsl:apply-templates>
+                </div>
             </div>
         </xsl:if>
     </xsl:template>
@@ -103,14 +111,15 @@
                     <xsl:attribute name="title">
                         <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
-					<xsl:attribute name="data-fancybox">
-						<xsl:text>Image</xsl:text>
-					</xsl:attribute>
+                    <xsl:attribute name="data-fancybox">
+                        <xsl:text>Image</xsl:text>
+                        <xsl:value-of select="NewsId" disable-output-escaping="yes"></xsl:value-of>
+                    </xsl:attribute>
                     <figure>
                         <div class="big-img">
                             <img >
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                                    <xsl:value-of select="NewsImages[1]/ImageUrl"></xsl:value-of>
                                 </xsl:attribute>
                                 <xsl:attribute name="alt">
                                     <xsl:value-of select="Title"></xsl:value-of>
@@ -127,6 +136,9 @@
                         </figcaption>
                     </figure>
                 </a>
+                <div style="display: none;">
+                    <xsl:apply-templates select="NewsImages"></xsl:apply-templates>
+                </div>
             </div>
         </xsl:if>
     </xsl:template>
@@ -140,14 +152,15 @@
                     <xsl:attribute name="title">
                         <xsl:value-of select="Title"></xsl:value-of>
                     </xsl:attribute>
-					<xsl:attribute name="data-fancybox">
-						<xsl:text>Image</xsl:text>
-					</xsl:attribute>
+                    <xsl:attribute name="data-fancybox">
+                        <xsl:text>Image</xsl:text>
+                        <xsl:value-of select="NewsId" disable-output-escaping="yes"></xsl:value-of>
+                    </xsl:attribute>
                     <figure>
                         <div class="small-img">
                             <img >
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                                    <xsl:value-of select="NewsImages[1]/ImageUrl"></xsl:value-of>
                                 </xsl:attribute>
                                 <xsl:attribute name="alt">
                                     <xsl:value-of select="Title"></xsl:value-of>
@@ -164,7 +177,34 @@
                         </figcaption>
                     </figure>
                 </a>
+                <div style="display: none;">
+                    <xsl:apply-templates select="NewsImages"></xsl:apply-templates>
+                </div>
             </div>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="NewsImages">
+        <xsl:if test="position()>1">
+            <a>
+                <xsl:attribute name="data-fancybox">
+                    <xsl:text disable-output-escaping="yes">Image</xsl:text>
+                    <xsl:value-of select="../NewsId" disable-output-escaping="yes"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="Title"></xsl:value-of>
+                </xsl:attribute>
+                <img >
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="ImageUrl"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </xsl:attribute>
+                </img>
+            </a>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

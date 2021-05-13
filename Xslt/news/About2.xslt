@@ -101,7 +101,9 @@
                                     <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
                                 </h2>
                             </div>
-                            <xsl:apply-templates select="News" mode="HeThong"></xsl:apply-templates>
+                            <div class="row">
+                                <xsl:apply-templates select="News" mode="HeThong"></xsl:apply-templates>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,24 +230,22 @@
             </div>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="News[1]" mode="HeThong">
-        <div class="row">
-            <div class="col-xl-5 col-md-6">
-                <div class="left">
-                    <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
-                </div>
+    <xsl:template match="News" mode="HeThong">
+        <div class="col-xl-5 col-md-6">
+            <div class="left">
+                <xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
             </div>
-            <div class="col-xl-7 col-md-6">
-                <div class="right">
-                    <img >
-                        <xsl:attribute name="src">
-                            <xsl:value-of select="ImageUrl"></xsl:value-of>
-                        </xsl:attribute>
-                        <xsl:attribute name="alt">
-                            <xsl:value-of select="Title"></xsl:value-of>
-                        </xsl:attribute>
-                    </img>
-                </div>
+        </div>
+        <div class="col-xl-7 col-md-6">
+            <div class="right">
+                <img >
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="ImageUrl"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </xsl:attribute>
+                </img>
             </div>
         </div>
     </xsl:template>

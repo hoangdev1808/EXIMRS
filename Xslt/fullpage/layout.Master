@@ -60,9 +60,7 @@
 									<portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
 								</div>
 							</div>
-							<ul class="nav-list">
 								<portal:modulewrapper id="mdl140" runat="server" configuremoduleid="140" />
-							</ul>
 							<div id="mobile"></div>
 						</div>
 					</nav>
@@ -130,8 +128,6 @@
 									<div class="col-xl-5 col-md-6 animation-left">
 										<div class="h-6__content">
 										<portal:modulewrapper id="mdl183" runat="server" configuremoduleid="183" />
-											<a class="btn btn-detail" href="">xem thêm
-											<div class="icon"></div></a>
 										</div>
 									</div>
 								</div>

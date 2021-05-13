@@ -1,0 +1,113 @@
+.a-2 {
+  width: 100%;
+  height: 100%;
+  background-color: #eff8ff;
+}
+
+.a-2 .block-title {
+  margin-bottom: 30px;
+}
+
+.a-2 .desc {
+  margin-bottom: 110px;
+}
+
+.a-2 .desc p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #333333;
+}
+
+.a-2 .history-slide {
+  position: relative;
+}
+
+.a-2 .history-slide .swiper-slide figure {
+  cursor: pointer;
+}
+
+.a-2 .history-slide .swiper-slide figure .img {
+  width: 100%;
+  height: 212px;
+  margin-bottom: 30px;
+}
+
+.a-2 .history-slide .swiper-slide figure .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.a-2 .history-slide .swiper-slide figure figcaption .content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.a-2 .history-slide .swiper-slide figure figcaption .content p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #333333;
+}
+
+.a-2 .history-slide .swiper-slide figure:hover .img img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.a-2 .history-slide .swiper-pagination {
+  width: 100%;
+  margin-top: -80px;
+}
+
+.a-2 .history-slide .swiper-pagination .swiper-pagination-bullet {
+  position: relative;
+  background: white;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+  width: 25%;
+  height: 10px;
+  border-radius: 0;
+  opacity: unset;
+}
+
+.a-2 .history-slide .swiper-pagination .swiper-pagination-bullet h3 {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: #666666;
+  font-weight: bold;
+}
+
+.a-2 .history-slide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #1a77b9;
+  border: none;
+}
+
+.a-2 .history-slide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active h3 {
+  color: #1a77b9;
+}
+
+@media screen and (max-width: 375px) {
+  .a-2 .desc {
+    margin-bottom: 20px;
+  }
+  .a-2 .history-slide .swiper-slide figure .img {
+    margin-bottom: 20px;
+  }
+  .a-2 .history-slide .swiper-pagination {
+    display: none;
+  }
+}
+/*# sourceMappingURL=a-2.css.map */

@@ -1,0 +1,185 @@
+.news-detail {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.news-detail .block-title h1 {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: #1a77ba;
+  font-weight: bold;
+  text-align: left;
+}
+
+.news-detail .block-title:before {
+  display: none;
+}
+
+.news-detail .time-line {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 1px #cccccc;
+}
+
+.news-detail .time-line .time p {
+  color: #999999;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.news-detail .time-line .icon-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.news-detail .time-line .icon-social ul li {
+  margin-left: 17px;
+}
+
+.news-detail .time-line .icon-social ul li a i {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.news-detail .content {
+  padding-top: 20px;
+}
+
+.news-detail .content p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #333333;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.news-detail .content .img {
+  width: 1020px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.news-detail .content .img img {
+  height: 567px;
+}
+
+.news-detail .content .img span {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-style: italic;
+}
+
+.news-detail .news-other {
+  background-color: #eef8ff;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.news-detail .news-other .block-title {
+  margin-bottom: 23px;
+}
+
+.news-detail .news-other .block-title:before {
+  display: block;
+}
+
+.news-detail .news-other .slider {
+  position: relative;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure {
+  width: 100%;
+  height: 100%;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure .img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure figcaption {
+  position: relative;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(51, 51, 51, 0.1);
+          box-shadow: 0px 3px 20px 0px rgba(51, 51, 51, 0.1);
+  width: 90%;
+  height: 96px;
+  margin-top: -40px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure figcaption .time p {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #999999;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure figcaption .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure figcaption .desc h3 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: 600;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.news-detail .news-other .slider .news-list .swiper-slide figure:hover figcaption .desc h3 {
+  color: #1a77b9;
+}
+
+@media screen and (max-width: 1199px) {
+  .news-detail .news-other .slider .news-list .swiper-slide figure .small-img {
+    height: 160px;
+  }
+  .news-detail .news-other .slider .news-list .swiper-slide figure figcaption {
+    padding: 15px;
+  }
+  .news-detail .news-other .slider .news-list .swiper-slide figure figcaption .desc {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.news-detail .news-other .slider .swiper-button-next::before,
+.news-detail .news-other .slider .swiper-button-prev::before {
+  color: #333333;
+}
+/*# sourceMappingURL=news-detail.css.map */

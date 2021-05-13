@@ -13,19 +13,35 @@
             <figure>
                 <a href="">
                     <div class="small-img">
-                        <img >
-                            <xsl:attribute name="src">
-                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="Url"></xsl:value-of>
                             </xsl:attribute>
-                            <xsl:attribute name="alt">
+                            <xsl:attribute name="title">
                                 <xsl:value-of select="Title"></xsl:value-of>
                             </xsl:attribute>
-                        </img>
+                            <img >
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                                </xsl:attribute>
+                                <xsl:attribute name="alt">
+                                    <xsl:value-of select="Title"></xsl:value-of>
+                                </xsl:attribute>
+                            </img>
+                        </a>
                     </div>
                     <figcaption>
                         <div class="desc">
                             <h3>
-                                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="Url"></xsl:value-of>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="title">
+                                        <xsl:value-of select="Title"></xsl:value-of>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                                </a>
                             </h3>
                         </div>
                     </figcaption>

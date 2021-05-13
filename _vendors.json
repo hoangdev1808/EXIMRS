@@ -9,8 +9,6 @@
 		"bower_components/bootstrap/dist/js/bootstrap.min.js",
 		"bower_components/swiper/dist/js/swiper.min.js",
 		"bower_components/fancybox/dist/jquery.fancybox.js",
-		"bower_components/pagePiling.js/dist/jquery.pagepiling.js",
-		"bower_components/slick-carousel/slick/slick.min.js",
 		"bower_components/vivus/dist/vivus.min.js"
 	],
 	"css": [

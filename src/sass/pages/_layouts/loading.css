@@ -1,0 +1,70 @@
+#loading-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#loading-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#loading-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#loading-container.complete {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#loading-container.complete::before {
+  left: -50%;
+}
+
+#loading-container.complete::after {
+  right: -50%;
+}
+
+#loading-container .loading-wrapper {
+  position: absolute;
+  padding-bottom: 75px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 450px;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+#loading-container .loading-wrapper svg {
+  width: 100%;
+}
+
+#loading-container .loading-wrapper svg #fill {
+  opacity: 0.8;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/*# sourceMappingURL=loading.css.map */

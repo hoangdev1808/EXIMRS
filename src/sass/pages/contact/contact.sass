@@ -68,64 +68,29 @@
 			padding: 15px
 		
 	
-
-	.wrap-form>div 
-		display: flex
-		flex-wrap: wrap
+	.box-form
 		width: 100%
-		span 
-			color: red
-			font-size: 13px
-			font-family: 'Montserrat'
-			font-weight: normal
-
-			&::before 
-				content: ''
-			
-		
-	
-
-	.box-form 
-		width: 100%
-		display: flex
-		flex-wrap: wrap
+	.wrap-form
 		.form-group 
-			flex: 0 0 100%
-			margin-bottom: 20px
-			&:nth-child(5) 
-				padding-right: 0
-			
-
-			&:nth-child(2n) 
-				padding-right: 0
-			
-
+			width: 100%
+			span 
+				color: red
+				font-size: 13px
+				font-family: 'Montserrat', sans-serif
+				font-weight: normal
+				font-weight: 400
+				&::before 
+					content: ''
 			@media(max-width: 1024px) 
 				margin-bottom: 15px
-			
-		
 
-		.form-group input 
-			border: solid 1px #e1e1e1
-			width: 100%
-			height: 45px
-			padding-left: 15px
-
-			&::placeholder 
-				font-size: 16px
-			
-		
-
-		.form-title 
-			-webkit-box-flex: 0
-			-ms-flex: 0 0 100%
-			flex: 0 0 100%
-		
-
-		.qparagraph 
-			flex: 0 0 100%
-			height: 100px
-			margin-bottom: 15px
+			input 
+				border: solid 1px #e1e1e1
+				width: 100%
+				height: 45px
+				padding-left: 15px
+				&::placeholder 
+					font-size: 16px
 
 			@media(max-width: 1024px) 
 				margin-bottom: 15px
@@ -134,135 +99,59 @@
 			textarea 
 				border: 1px solid #e1e1e1
 				width: 100%
-				height: 100%
+				height: 165px
 				color: #333
 				caret-color: #064975
 				font-size: 15px
 				padding-left: 15px
-			
-		
 
-		.frm-captcha 
-			display: flex
-			flex-direction: row-reverse
-			align-items: center
-			justify-content: flex-end
-			margin: 0
-			flex: none
-			padding: 0
-			float: left
-			width: auto
-
-			.RadCaptcha 
-				position: relative
-				width: unset !important
-
-				em 
-					position: absolute
-					bottom: 100%
-					color: red
-				
-			
-			.RadCaptcha>div>div
+			&.frm-captcha 
 				display: flex
 				align-items: center
-				position: relative
-			
-			.RadCaptcha 
-				height: 40px
-				display: flex
-				flex-direction: row
-				align-items: center
-				margin: 0
-				position: relative
-				span
-					position: absolute
-					bottom: -30px
-					left: 0
-				
-				img 
-					height: 40px !important
-				
-
-				.rcRefreshImage 
-					font-size: 0
-					text-decoration: none
-					margin-left: 25px
-
-					&::after 
-						content: 'replay'
-						font-family: 'Material Icons'
-						font-size: 30px
-						color: #999999
-					
-
-					@media screen and (max-width: 1025px) 
-						margin-left: 0
-					
-				
-			
-
-			.frm-captcha-input 
-				.label 
-					display: none
-
-					height: 50px
-					width: 170px
-					display: flex
-					flex-direction: row-reverse
-					align-items: center
-					justify-content: flex-end
-					margin-left: 25px
-
-				input 
-					margin-bottom: 0
-					height: 100%
-				
-
-				@media screen and (max-width: 1025px) 
-					margin-left: 0
-					width: unset
-				
-
-				@media screen and (max-width: 480px) 
-					margin-bottom: 15px
-				
-			
-
-			@media(max-width: 1024px) 
-				width: unset
-
-				&.frm-captcha-input 
-					width: 100%
-					margin-top: 15px
-				
-			
-
+				@media screen and ( max-width: 375px)
+					flex-direction: column
+					.frm-captcha-input,
+					.RadCaptcha 
+						width: 100%
+				.frm-captcha-input 
+					flex: 0 1 50%
+					.label 
+						font-size: 0
+				.RadCaptcha 
+					flex: 0 1 50%
+					@media screen and ( max-width: 375px)
+						width: 100% !important
+					div 
+						div 
+							display: flex
+							align-items: center
+							flex-direction: row-reverse
+							justify-content: flex-end
+					.rcRefreshImage
+						font-size: 0
+						@media screen and ( max-width: 575px)
+							margin-right: 10px
+						&::after
+							color: #333333
+							content: 'replay'
+							font-family: Material Icons 
+							font-size: 25px
 			@media(max-width: 768px) 
 				width: 100%
-			
-		
-
 		.frm-btnwrap 
-			margin-left: auto
 			margin-bottom: 0
 			flex: none
 			padding: 0
-			float: right
 			width: 170px
-
 			label 
 				display: none
-			
-
 			.frm-btn 
 				position: relative
 				transition: all ease-in-out .3s
 				border: none
 				background-color: rgb(26, 119, 186)
-				width: 190px
-				height: 50px
 				border-radius: 50px
+				width: 170px
 				input 
 					text-align: center
 					border-radius: 0
@@ -273,17 +162,6 @@
 					font-weight: bold
 					text-transform: uppercase
 					border: none
-				
-
-				.ri-arrow-right-line
-					position: absolute
-					right: 20px
-					top: 50%
-					transform: translateY(-50%)
-					font-size: 18px
-					font-family: "remixicon"
-					color: rgb(255, 255, 255)
-				
 				@media(max-width: 991.98px) 
 					width: 120px
 					font-size: 14px
@@ -291,14 +169,11 @@
 				&:hover
 					border-radius: 0
 					transition: all ease-in-out .3s
-				
-			
 
 			@media(max-width: 1024px) 
 				width: unset
 				margin-top: 15px
 				float: left
-			
 
 			.frm-btn-reset 
 				display: none

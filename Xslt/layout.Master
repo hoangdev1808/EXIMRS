@@ -57,9 +57,9 @@
 										<portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
 									</div>
 								</div>
-								<ul class="nav-list">
+								
 									<portal:modulewrapper id="mdl140" runat="server" configuremoduleid="140" />
-								</ul>
+								
 								<div id="mobile"></div>
 							</div>
 						</nav>
@@ -96,18 +96,18 @@
 							</div>
 							<div class="col-xl-2 col-md-6 col-sm-6 col-6 dekstop">
 								<div class="footer-card">
-									<portal:modulewrapper id="mdl160" runat="server" configuremoduleid="160" />
+									<portal:modulewrapper id="mdl191" runat="server" configuremoduleid="191" />
 								</div>
 							</div>
 							<div class="col-xl-2 col-md-6 col-sm-6 dekstop">
 								<div class="footer-card">
-									<portal:modulewrapper id="mdl161" runat="server" configuremoduleid="161" />
+									<portal:modulewrapper id="mdl190" runat="server" configuremoduleid="190" />
 									
 								</div>
 							</div>
 							<div class="col-xl-2 col-md-6 col-sm-6 dekstop">
 								<div class="footer-card">
-								<portal:modulewrapper id="mdl162" runat="server" configuremoduleid="162" />
+								<portal:modulewrapper id="mdl192" runat="server" configuremoduleid="192" />
 								</div>
 							</div>
 							<div class="col-xl-3 col-md-12">
@@ -120,26 +120,6 @@
 									</div>
 									<div class="wrap-form">
 										<portal:modulewrapper id="mdl195" runat="server" configuremoduleid="195" />
-										<%-- <div class="form-group">
-											<input type="text" placeholder="Họ và tên*">
-										</div>
-										<div class="form-group">
-											<input type="text" placeholder="Số điện thoại*">
-										</div>
-										<div class="form-group">
-											<input type="text" placeholder="Email*">
-										</div>
-										<div class="form-group">
-											<input type="text" placeholder="Tiêu đề*">
-										</div>
-										<div class="form-group">
-											<textarea cols="30" rows="5" placeholder="Nội dung*"></textarea>
-										</div>
-										<div class="form-group frm-btnwrap">
-											<div class="frm-btn">
-												<input class="btn btn-default frm-btn-submit" type="submit" name="" value="Gửi"><em class="material-icons">arrow_forward</em>
-											</div>
-										</div> --%>
 									</div>
 								</div>
 							</div>

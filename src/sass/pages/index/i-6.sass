@@ -32,9 +32,18 @@
 			color: rgb(26, 119, 186)
 			font-size: 14px
 			background-color: #fff
+			position: relative
+			&::after
+				position: absolute
+				content: url('/Data/Sites/1/skins/default/assets/icons/plus.png')
+				top: 55%
+				right: 15%
+				transform: translateY(-50%)
 			&:hover
 				color: #ffffff
 				background: rgb(26, 119, 186)
+				&::after
+					content: url('/Data/Sites/1/skins/default/assets/icons/plus-hover.png')
 	@media screen and ( max-width: 1280px)
 		&__content
 			width: 100%

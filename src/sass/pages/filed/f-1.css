@@ -1,0 +1,112 @@
+.filed {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/linhvuchd/f-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filed .block-title {
+  margin-bottom: 27px;
+}
+
+.filed-list .filed-item .img {
+  width: 100%;
+  height: 400px;
+}
+
+.filed-list .filed-item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.filed-list .filed-item .desc {
+  padding-top: 53px;
+  padding-left: 30px;
+  padding-right: 55px;
+}
+
+.filed-list .filed-item .desc h3 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: #1a77b9;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.filed-list .filed-item .desc p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #333333;
+  line-height: 1.5;
+}
+
+.filed-list .filed-item:nth-child(2n) {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.filed-list .filed-item:nth-child(2n) .left {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.filed-list .filed-item:nth-child(2n) .right {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.filed-list .filed-item:nth-child(2n) .right .desc {
+  padding-left: 0;
+  padding-right: 75px;
+}
+
+@media screen and (max-width: 1199px) {
+  .filed-list .filed-item:nth-child(2) {
+    margin: 30px 0;
+  }
+  .filed-list .filed-item .img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filed-list .filed-item .desc {
+    padding: 0;
+    padding-top: 25px;
+  }
+  .filed-list .filed-item:nth-child(2) .right .desc {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .filed-list .filed-item {
+    margin-bottom: 15px;
+  }
+  .filed-list .filed-item .left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .filed-list .filed-item .right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .filed-list .filed-item .right .desc {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .filed-list .filed-item:nth-child(2) .right .desc {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=f-1.css.map */
